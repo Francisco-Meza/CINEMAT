@@ -1,0 +1,11 @@
+nav{
+    background: purple;
+    height: 50px;
+    line-height: 25px;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    margin: 10px;
+    align-content: center;
+}
