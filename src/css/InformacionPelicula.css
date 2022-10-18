@@ -1,0 +1,40 @@
+button{
+    background-color: #8C52FF;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    height: 30px;
+}
+section{
+    text-align: center;
+}
+#section-main{
+    display: flex;
+    justify-content: center;
+}
+#section-main-detalles{
+    width: 40%;
+    height: 50%;
+    margin-top: 10%;
+}
+#section-main-imagen{
+    border: black solid;
+    border-style: dotted;
+    align-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 25%;
+    height: 25%;
+}
+.section-main-detalles-informacion-parrafos{
+    font-weight: bold;
+    font-size: large;
+}
+.section-main-detalles-informacion-parrafos span{
+    font-weight: normal;
+    font-size: small;
+    border: black solid 1px;
+    margin-left: 10px;
+    border-style: dashed;
+    border-radius: 4px;
+}
