@@ -1,11 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
 nav{
-    background: purple;
-    height: 50px;
-    line-height: 25px;
+    display: flex;
+    background: #8148F4;
+    height: 50%;
+
+    color: white;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    padding-right: 10%;
+}
+.container{
+    margin: auto;
+    width: 95%;
+}
+nav h1{
+    margin: auto 20px;
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
 }
 nav ul li{
     list-style: none;
     float: left;
-    margin: 10px;
+    margin: auto 20px;
     align-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul{
+    margin: auto 0;
+    margin-right: 30%;
+}
+nav ul li:hover{
+    cursor: pointer;
+    border-bottom: white solid;
+}
+.fa-solid{
+    color: white;
+}
+nav a{
+    margin: auto;
+    
+}
+nav a:hover{
+    opacity: 0.4;
+}
+button{
+    background-color: #8C52FF;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    height: 30px;
+}
+.portadas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    height: 100%;
+}
+.portadas-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('../assets/ejemplo.jpg') no-repeat center center/cover;
+    border: 1px dotted;
+    border-radius: 10px;
+    width: 50%;
+    height: 230px;
+    padding-bottom: 20px;
+    margin: 3% 0;
+}
+.portadas-banner:hover{
+    opacity: 0.8;
+}
+.portadas-banner h2{
+    color: white;
 }
