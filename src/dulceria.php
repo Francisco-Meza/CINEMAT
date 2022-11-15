@@ -2,19 +2,16 @@
 <html lang="en">
     <head>
          <title>Dulceria</title>
+         <link rel="stylesheet" href="css/style.css">
     </head>
          
     <body>
-        <?php
-            include('nav.html');
-        ?>
         <div class="container">
+            <?php
+                include('nav.html');
+            ?>
             <div class="imgFodo">
                 <div class="cabecera">
-                    <header class="header">
-                        <a href="index.html">
-                        <img src="assets/logoCM.png" alt="logo" class="logImg">
-                    </header>
         <!-- Contenido principal -->
             <main class="contenedor">
                 <h1 class="nuestrosProductos">Productos</h1>
