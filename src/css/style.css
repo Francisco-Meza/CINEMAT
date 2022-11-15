@@ -44,14 +44,21 @@ nav a:hover{
     opacity: 0.4;
     cursor: pointer;
 }
-button{
+.button-portada{
     background-color: #8C52FF;
     border: none;
     border-radius: 13px;
     color: white;
     height: 30px;
 }
-button:hover{
+.button-general{
+    background-color: #8C52FF;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    height: 30px;
+}
+.button-general:hover{
     opacity: 0.8;
     cursor: pointer;
 }
