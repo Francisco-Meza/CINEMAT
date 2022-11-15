@@ -38,9 +38,11 @@ nav ul li:hover{
 nav a{
     margin: auto;
     text-decoration: none;
+    color: white;
 }
 nav a:hover{
     opacity: 0.4;
+    cursor: pointer;
 }
 button{
     background-color: #8C52FF;
