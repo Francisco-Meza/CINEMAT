@@ -11,19 +11,9 @@
 </head>
 <body>
     <div class="container">
-        <nav>
-            <h1>CINEMAT</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="dulceria.html">Dulceria</a></li>
-                <li>Sugerencias</li>
-                <li><a href="AcercaDe.html">Acerca de</a></li>
-            </ul>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
-        </nav>
-        <hr>
+        <?php
+            include('nav.html');
+        ?>
         <div class="portadas">
             <div class="portadas-banner">
                 <h2>Pelicula</h2>
