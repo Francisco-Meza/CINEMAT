@@ -37,7 +37,7 @@ nav ul li:hover{
 }
 nav a{
     margin: auto;
-    
+    text-decoration: none;
 }
 nav a:hover{
     opacity: 0.4;
