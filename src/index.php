@@ -7,7 +7,6 @@
     <title>CINEMAT</title>
     <link rel="stylesheet" href="css/style.css">
     <a href="dulceria.html"></a>
-    <script src="https://kit.fontawesome.com/24ebd39237.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
