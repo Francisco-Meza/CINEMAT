@@ -9,6 +9,9 @@
     </head>
     <body>
         <div class="container">
+            <?php
+                include("nav.html");
+            ?>
             <h2>Registro de la pelicula</h2>
             <form class="form" >
                Nombre:<input type="nombre" placeholder="Escribe"/>
@@ -23,7 +26,7 @@
                 Duraci&oacute;n:<input type="duracion" placeholder="Escribe" /> 
                 <br>
                 <br>
-                <button type="submit" >Enviar</button>
+                <button type="submit">Enviar</button>
               </form>
         </div>
     </body>
