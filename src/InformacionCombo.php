@@ -12,7 +12,7 @@
             <?php
             include("nav.html");
             ?>
-                <h2>COMBO</h2>
+                <h2>"Nombre del combo"</h2>
                 <img src="assets/combo.png" class="alinear-izq"> 
             <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

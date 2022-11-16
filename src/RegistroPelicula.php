@@ -26,7 +26,7 @@
                 Duraci&oacute;n:<input type="duracion" placeholder="Escribe" /> 
                 <br>
                 <br>
-                <button type="submit">Enviar</button>
+                <button class="button-general" type="submit">Enviar</button>
               </form>
         </div>
     </body>

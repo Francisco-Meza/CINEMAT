@@ -87,3 +87,7 @@ nav a:hover{
 .portadas-banner h2{
     color: white;
 }
+.centrado{
+    display: flex;
+    justify-content: center;
+}
