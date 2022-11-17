@@ -13,10 +13,10 @@
                 include("nav.html");
             ?>
             <div class="centrado">
-                    <div id="detalles-imagen">
-                        <img width="200" src="assets/usuario.png">
-                    </div>
-                    <p>
+                    <center>
+                        <img class="bordes"src="assets/usuario.png">  
+                    </center>
+                    <p class= "centrado-hijo">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                         enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -25,7 +25,10 @@
                         nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+                    <center>
                         <button class="button-general">Contacto</button>
+                    </center>
+                        
             </div>
         </div>
     </body>

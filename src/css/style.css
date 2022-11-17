@@ -87,11 +87,17 @@ nav a:hover{
 .portadas-banner h2{
     color: white;
 }
-.centrado{
-    margin: auto;
-    padding: 50px; 
-    text-align: justify; 
-    width: 33.33%;
-  height: auto;
+.bordes{
+    border-radius:  20px; 
 }
+.propiedades-img{
+    border-radius:  20px; 
+}
+.propiedades-texto{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    text-align: center,justify;
+}
+
 
