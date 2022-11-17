@@ -88,6 +88,10 @@ nav a:hover{
     color: white;
 }
 .centrado{
-    border: black solid 4px;
-    padding: auto;
+    margin: auto;
+    padding: 50px; 
+    text-align: justify; 
+    width: 33.33%;
+  height: auto;
 }
+
