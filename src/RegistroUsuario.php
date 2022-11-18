@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Registro de una pelicula</title>
+        <title>Registrate</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -12,42 +12,38 @@
             <?php
                 include("nav.html");
             ?>
-                <h2>Registro de pelicula</h2>
+                <h2>Registro</h2>
                 <form  action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
                     <br>
-                    <label for="">Idioma</label>
+                    <label for="">Apellidos</label>
                     <br>
-                    <input type="text" name="Idioma" id="idioma" pattern="Idioma de la pelicula">
+                    <input type="text" name="apellido" id="apellido" pattern="apellido">
                     <br>
-                    <label for="">Duraci&oacute;n</label> 
+                    <label for="">Fecha de nacimiento</label> 
                     <br>
-                    <input type="text" name="Duración" id="duración" pattern="Nombre de la pelicula">
+                    <input type="text" name="Fecha_Nac" id="fecha_Nac" pattern="Fecha_Nac">
                     <br>
-                    <label for="">Clasificaci&oacute;n </label>
+                    <label for="">Email</label>
                     <br>
-                    <input type="text" name="Clasificacion" id="clasificacion" pattern="Clasificación de la pelicula">
+                    <input type="text" name="Correo" id="correo" pattern="correo">
                     <br>
-                    <label for=""> G&eacute;nero </label> 
+                    <label for="">Contrase&ntilde;a</label> 
                     <br>
-                    <input type="text" name="Genero" id="genero" pattern="Género de la pelicula">
+                    <input type="password" name="contrasenia" id="contrasenia" pattern="contrasenia">
                     <br>
-                    <label for="">Formato</label>
+                    <label for="">Forma de pago</label>
                     <br>
-                    <input type="text" name="Formato" id="formato" pattern="Formato de la pelicula">
+                    <input type="text" name="pago" id="pago" pattern="Forma de pago">
                     <br>
-                    <label for="">Portada</label>
+                    <label for="">Codig&oacute;</label>
                     <br>
-                    <input type="text" name="portada" id="Portada" pattern="Portada de la pelicula">
-                    <br>
-                    <label for="">Informaci&oacute;n </label>
-                    <br>
-                    <textarea  name="Información" id="información" pattern="Información de la pelicula"></textarea>
-                    <br>
+                    <input type="text" name="codigo" id="codigo" pattern="codigo">
                     <br>
                     <center>
+                        <br>
                         <button class="button-general" type="submit">Enviar</button>
                     </center>
                 </form>  
