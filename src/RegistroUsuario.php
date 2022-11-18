@@ -13,7 +13,7 @@
                 include("nav.html");
             ?>
                 <h2>Registro</h2>
-                <form  action="" onsubmit="return validar();">
+                <form id="formulario" action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
@@ -28,11 +28,11 @@
                     <br>
                     <label for="">Email</label>
                     <br>
-                    <input type="text" name="Correo" id="correo" pattern="correo">
+                    <input type="text" name="correo" id="correo" pattern="correo">
                     <br>
                     <label for="">Contrase&ntilde;a</label> 
                     <br>
-                    <input type="password" name="contrasenia" id="contrasenia" pattern="contrasenia">
+                    <input type="password" name="password" id="password" pattern="password">
                     <br>
                     <label for="">Forma de pago</label>
                     <br>
@@ -48,17 +48,6 @@
                     </center>
                 </form>  
         </div>
-        <Script>
-            function validar(){
-                nombreInput = document.getElementById("nombre");
-                nombre = nombreInput.value;
-                if(nombre.length >10){
-                    nombreInput.value = 'Debe tener menos de 10 caracteres'
-                    nombreInput.focus();
-                    return false
-                }
-                document.form.submit();
-            }
-        </Script>
+        <script src="js/formulario.js"></script>
     </body>
 </html>

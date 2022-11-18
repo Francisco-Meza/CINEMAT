@@ -14,7 +14,14 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+    apellido: false,
+    idioma: false,
+    duración: false,
+    clasificacion: false,
+    genero: false,
+    formato: false,
+    precio: false
 }
 const validarFormulario = (e) => {
 	switch (e.target.name) {
@@ -23,6 +30,9 @@ const validarFormulario = (e) => {
 		break;
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
+        case "apellido":
+			validarCampo(expresiones.nombre, e.target, 'apellido');
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
@@ -62,6 +72,7 @@ const validarFormulario = (e) => {
 const validarCampo = (expresion, input, campo) => {
 	if(expresion.test(input.value)){
         document.getElementById(campo).style.border = '5px solid green';
+        campos[campo] = true;
 		/*document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -70,6 +81,7 @@ const validarCampo = (expresion, input, campo) => {
 		campos[campo] = true;*/
 	} else {
         document.getElementById(campo).style.border = '5px solid RED';
+        campos[campo] = false;
 		/*document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
@@ -84,4 +96,7 @@ inputs.forEach((input) =>{
 });
 formulario.addEventListener('submit',(e) =>{
     e.preventDefault();
+    if(!campos.nombre){
+        alert("Revisa bien los campos llenados");
+    }
 });

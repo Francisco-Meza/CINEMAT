@@ -10,22 +10,22 @@
                 include("nav.html");
             ?>
                 <br>
-                <form action="" onsubmit="return validar();">
+                <form id="formulario" action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="NombrePelicula">
                     <br>
                     <label for="">Email</label>
                     <br>
-                    <input type="text" name="email" id="Email" pattern="Email"></input>
+                    <input type="text" name="correo" id="correo" pattern="Email"></input>
                     <br>
                     <label for="">Contrase&ntilde;a</label>
                     <br>
-                    <input type="text" name="contrasenia" id="Contrasenia" pattern="Contrasenia">
+                    <input type="text" name="password" id="password" pattern="Contrasenia">
                     <br>
                     <br>
                     <center>
-                        <button class="button-registro" type="submit">Aceptar</button>
+                        <button class="button-general" type="submit">Aceptar</button>
                     </center>
                     <br>
                     <center>
@@ -39,10 +39,8 @@
                     <!-- <center>      -->
                     <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>
                     <br>
-                        
-                        
                 </form>  
         </div>
-        
+        <script src="js/formulario.js"></script>
     </body>
 </html>
