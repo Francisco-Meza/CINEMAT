@@ -9,12 +9,14 @@
         <div class="container">
             <?php
                 include("nav.html");
+                
             ?>
+                <br>
                 <nav>
-                        <ul>
-                            <li><a href="RegistroCombo.php">Registro Combo</a></li>
-                            <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="RegistroCombo.php">Registro Combo</a></li>
+                        <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
+                    </ul>
                 </nav>
                 <br>
                 <form action="" onsubmit="return validar();">
