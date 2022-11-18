@@ -19,7 +19,7 @@
                     </ul>
                 </nav>
                 <br>
-                <form action="" onsubmit="return validar();">
+                <form id="formulario" action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
@@ -30,13 +30,13 @@
                     <br>
                     <label for="">Precio</label>
                     <br>
-                    <input type="text" name="precio" id="Precio" pattern="Precio">
+                    <input type="text" name="precio" id="precio" pattern="Precio">
                     <br>
                     <center>
                         <button class="button-general" type="submit">Enviar</button>
-                    </center>
-                        
+                    </center>   
                 </form>  
         </div>
+        <script src="js/formulario.js"></script>
     </body>
 </html>

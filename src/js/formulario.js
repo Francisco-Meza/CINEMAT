@@ -1,5 +1,5 @@
-const formulario = document.getElementById("formularioPelicula");
-const inputs = document.querySelectorAll('#formularioPelicula input');
+const formulario = document.getElementById("formulario");
+const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -51,6 +51,11 @@ const validarFormulario = (e) => {
         break;
         case "formato":
             validarCampo(expresiones.nombre, e.target, 'formato');
+        break;case "formato":
+            validarCampo(expresiones.nombre, e.target, 'formato');
+        break;
+        case "precio":
+            validarCampo(expresiones.numero, e.target, 'precio');
         break;
 	}
 }

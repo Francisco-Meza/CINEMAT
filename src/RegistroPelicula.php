@@ -20,7 +20,7 @@
                 </ul>
             </nav>
             <br>
-                <form  id="formularioPelicula" action="" onsubmit="return validar();">
+                <form  id="formulario" action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
