@@ -20,30 +20,30 @@
                 </ul>
             </nav>
             <br>
-                <form  action="" onsubmit="return validar();">
+                <form  id="formularioPelicula" action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
                     <br>
                     <label for="">Idioma</label>
                     <br>
-                    <input type="text" name="Idioma" id="idioma" pattern="Idioma de la pelicula">
+                    <input type="text" name="idioma" id="idioma" pattern="Idioma de la pelicula">
                     <br>
                     <label for="">Duraci&oacute;n</label> 
                     <br>
-                    <input type="text" name="Duración" id="duración" pattern="Nombre de la pelicula">
+                    <input type="text" name="duración" id="duración" pattern="Nombre de la pelicula">
                     <br>
                     <label for="">Clasificaci&oacute;n </label>
                     <br>
-                    <input type="text" name="Clasificacion" id="clasificacion" pattern="Clasificación de la pelicula">
+                    <input type="text" name="clasificacion" id="clasificacion" pattern="Clasificación de la pelicula">
                     <br>
                     <label for=""> G&eacute;nero </label> 
                     <br>
-                    <input type="text" name="Genero" id="genero" pattern="Género de la pelicula">
+                    <input type="text" name="genero" id="genero" pattern="Género de la pelicula">
                     <br>
                     <label for="">Formato</label>
                     <br>
-                    <input type="text" name="Formato" id="formato" pattern="Formato de la pelicula">
+                    <input type="text" name="formato" id="formato" pattern="Formato de la pelicula">
                     <br>
                     <label for="">Portada</label>
                     <br>
@@ -51,7 +51,7 @@
                     <br>
                     <label for="">Informaci&oacute;n </label>
                     <br>
-                    <textarea  name="Información" id="información" pattern="Información de la pelicula"></textarea>
+                    <textarea  name="información" id="información" pattern="Información de la pelicula"></textarea>
                     <br>
                     <br>
                     <center>
@@ -59,17 +59,6 @@
                     </center>
                 </form>  
         </div>
-        <Script>
-            function validar(){
-                nombreInput = document.getElementById("nombre");
-                nombre = nombreInput.value;
-                if(nombre.length >10){
-                    nombreInput.value = 'Debe tener menos de 10 caracteres'
-                    nombreInput.focus();
-                    return false
-                }
-                document.form.submit();
-            }
-        </Script>
+        <Script src="js/formulario.js"></Script>
     </body>
 </html>
