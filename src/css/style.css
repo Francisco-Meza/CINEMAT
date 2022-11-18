@@ -63,6 +63,14 @@ nav a:hover{
     opacity: 0.8;
     cursor: pointer;
 }
+.button-registro{
+    background-color: #3f7028;
+    border: 1px;
+    border-radius: 13px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
 .portadas{
     display: grid;
     grid-template-columns: repeat(4,1fr);

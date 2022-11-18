@@ -32,6 +32,7 @@
                     <br>
                     <input type="text" name="precio" id="Precio" pattern="Precio">
                     <br>
+                    <br>
                     <center>
                         <button class="button-general" type="submit">Enviar</button>
                     </center>

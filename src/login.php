@@ -4,7 +4,7 @@
         <title>Login</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body text="white">
         <div class="container">
             <?php
                 include("nav.html");
@@ -17,13 +17,29 @@
                     <br>
                     <label for="">Email</label>
                     <br>
-                    <textarea  name="email" id="Email" pattern="Email"></textarea>
+                    <input type="text" name="email" id="Email" pattern="Email"></input>
                     <br>
                     <label for="">Contrase&ntilde;a</label>
                     <br>
                     <input type="text" name="contrasenia" id="Contrasenia" pattern="Contrasenia">
                     <br>
-                        <button class="button-general" type="submit">Registrar</button>
+                    <br>
+                    <center>
+                        <button class="button-registro" type="submit">Aceptar</button>
+                    </center>
+                    <br>
+                    <center>
+                    <c> <a href = "http://google.com">¿Olvidaste la constraseña?</a></c>
+                    <br>
+                    <br>
+                    <!-- <center>   -->
+                    <b>Ingresar con</b>
+                    <br>
+                    <br>
+                    <!-- <center>      -->
+                    <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>
+                    <br>
+                        
                         
                 </form>  
         </div>
