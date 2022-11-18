@@ -12,7 +12,7 @@
             <?php
             include("nav.html");
             ?>
-            <img class="propiedades-img" style="float:left; margin:10px;" alt="" src="assets/combo.png" />
+            <img class="bordes" style="float:left; margin:10px;" alt="" src="assets/combo.png" />
                 <div class="propiedades-texto">
                    <p>
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
