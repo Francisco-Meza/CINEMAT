@@ -23,7 +23,7 @@
                     <br>
                     <input type="text" name="contrasenia" id="Contrasenia" pattern="Contrasenia">
                     <br>
-                        <button class="button-general" type="submit">Enviar</button>
+                        <button class="button-general" type="submit">Registrar</button>
                         
                 </form>  
         </div>
