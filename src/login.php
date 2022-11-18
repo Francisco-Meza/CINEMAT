@@ -15,9 +15,9 @@
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="NombrePelicula">
                     <br>
-                    <label for="">Email</label>
+                    <label for="">Correo</label>
                     <br>
-                    <input type="text" name="email" id="Email" pattern="Email"></input>
+                    <input type="text" name="correo" id="correo" pattern="correo"></input>
                     <br>
                     <label for="">Contrase&ntilde;a</label>
                     <br>
@@ -38,11 +38,9 @@
                     <br>
                     <!-- <center>      -->
                     <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>
-                    <br>
-                        
-                        
+                    <br>  
                 </form>  
         </div>
-        
+        <script src="js/formulario.js"></script>
     </body>
 </html>
