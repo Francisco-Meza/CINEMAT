@@ -12,8 +12,8 @@
             <?php
                 include("nav.html");
             ?>
-                <h2 id="h22">Registro de pelicula</h2>
-                <form class="form" action="" onsubmit="return validar();">
+                <h2>Registro de pelicula</h2>
+                <form  action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
@@ -46,7 +46,10 @@
                     <br>
                     <textarea  name="Información" id="información" pattern="Información de la pelicula"></textarea>
                     <br>
-                    <button class="button-general" type="submit">Enviar</button>
+                    <br>
+                    <center>
+                        <button class="button-general" type="submit">Enviar</button>
+                    </center>
                 </form>  
         </div>
         <Script>
