@@ -13,7 +13,7 @@
                 <form action="" onsubmit="return validar();">
                     <label for="" >Nombre</label>
                     <br>
-                    <input type="text" name="nombre" id="nombre" pattern="NombrePelicula">
+                    <input type="text" name="usuario" id="usuario" pattern="NombreUsuario">
                     <br>
                     <label for="">Correo</label>
                     <br>
