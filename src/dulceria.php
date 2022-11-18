@@ -12,12 +12,16 @@
             ?>
             <div class="imgFodo">
                 <div class="cabecera">
-        <!-- Contenido principal -->
-            <main class="contenedor">
-                <h1 class="nuestrosProductos">Productos</h1>
-                <div class="productos">
-    
-                <!-- Inicio producto1 -->
+                    <!-- Contenido principal -->
+                    <main class="contenedor">
+                        <nav>
+                            <ul>
+                                <li><a href="RegistroCombo.php">Registro Combo</a></li>
+                                <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
+                            </ul>
+                        </nav>
+                        <!--<div class="productos">-->
+                     <!-- Inicio producto1 -->
                     <div class="producto">
                         <div class="fondoBlanco">
                             <img src="assets/Mamut.png" alt="mamut">
