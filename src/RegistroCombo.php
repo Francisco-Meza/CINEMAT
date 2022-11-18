@@ -38,17 +38,5 @@
                         
                 </form>  
         </div>
-        <Script>
-            function validar(){
-                nombreInput = document.getElementById("nombre");
-                nombre = nombreInput.value;
-                if(nombre.length >10){
-                    nombreInput.value = 'Debe tener menos de 10 caracteres'
-                    nombreInput.focus();
-                    return false
-                }
-                document.form.submit();
-            }
-        </Script>
     </body>
 </html>
