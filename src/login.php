@@ -17,11 +17,7 @@
                     <br>
                     <label for="">Correo</label>
                     <br>
-<<<<<<< HEAD
                     <input type="text" name="correo" id="correo" pattern="Email"></input>
-=======
-                    <input type="text" name="correo" id="correo" pattern="correo"></input>
->>>>>>> 7746d303b0e89dd96f4a6145427b44787828de7c
                     <br>
                     <label for="">Contrase&ntilde;a</label>
                     <br>
@@ -42,11 +38,7 @@
                     <br>
                     <!-- <center>      -->
                     <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>
-<<<<<<< HEAD
                     <br>
-=======
-                    <br>  
->>>>>>> 7746d303b0e89dd96f4a6145427b44787828de7c
                 </form>  
         </div>
         <script src="js/formulario.js"></script>
