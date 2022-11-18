@@ -16,8 +16,8 @@
                     <main class="contenedor">
                         <nav>
                             <ul>
-                                <li><a href="RegistroCombo.php">Registro Combo</a></li>
-                                <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
+                                <li><a href="dulceria.php">Dulceria</a></li>
+                                <li><a href="combo.php">Combo</a></li>
                             </ul>
                         </nav>
                         <!--<div class="productos">-->
