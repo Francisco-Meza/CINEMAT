@@ -20,11 +20,33 @@
                 </ul>
             </nav>
             <br>
-                <form  id="formulario" action="" onsubmit="return validar();">
-                    <label for="" >Nombre</label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
-                    <br>
+                <form  id="formularioPelicula" action="">
+                    <dic class="formulario__h1">
+                        <h1>Registro de pelicula</h1>
+                    </dic>
+                    <!-------------------------NOMBRE----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la pelicula">
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El nombre solo debe contener letras</p>
+                        </div>
+                    </div>
+                    <!-------------------------IDIOMA----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Español">
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El nombre solo debe contener letras</p>
+                        </div>
+                    </div>
+                    <!----<br>
                     <label for="">Idioma</label>
                     <br>
                     <input type="text" name="idioma" id="idioma" pattern="Idioma de la pelicula">
@@ -53,12 +75,12 @@
                     <br>
                     <textarea  name="información" id="información" pattern="Información de la pelicula"></textarea>
                     <br>
-                    <br>
-                    <center>
+                    <br>---->
+                    <div class="formulario__botones">
                         <button class="button-general" type="submit">Enviar</button>
-                    </center>
+                    </div>
                 </form>  
         </div>
-        <Script src="js/formulario.js"></Script>
+        <!--<Script src="js/formulario.js"></Script>-->
     </body>
 </html>
