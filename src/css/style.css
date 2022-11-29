@@ -205,6 +205,17 @@ textarea{
     border-radius: 3px;
     transition: .3s ease all;
 }
+.formulario__textarea{
+    height: 75px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+.formulario__textarea:focus{
+    border: 1px solid #8C52FF;
+    outline: none;
+}
 .formulario__input:focus{
     border: 1px solid #8C52FF;
     outline: none;

@@ -19,7 +19,30 @@
                     </ul>
                 </nav>
                 <br>
-                <form id="formulario" action="" onsubmit="return validar();">
+                <form class="formulario" action="" onsubmit="return validar();">
+                <!-------------------------NOMBRE----------------------->
+                <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la pelicula">
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El nombre solo debe contener letras</p>
+                        </div>
+                    </div>
+                    <!-------------------------DETALLES----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <textarea type="text" class="formulario__textarea" name="nombre" id="nombre" placeholder="Descripci&oacute;n de la pelicula"></textarea>
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El nombre solo debe contener letras</p>
+                        </div>
+                    </div>
+                <!--
                     <label for="" >Nombre</label>
                     <br>
                     <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
@@ -35,7 +58,7 @@
                     <br>
                     <center>
                         <button class="button-general" type="submit">Enviar</button>
-                    </center>   
+                    </center>  --> 
                 </form>  
         </div>
         <script src="js/formulario.js"></script>
