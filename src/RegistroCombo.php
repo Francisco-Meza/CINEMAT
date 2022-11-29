@@ -8,8 +8,7 @@
 
         <div class="container">
             <?php
-                include("nav.html");
-                
+                include("nav.html"); 
             ?>
                 <br>
                 <nav>
@@ -24,7 +23,7 @@
                 <div class="formulario__grupo">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la pelicula">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre del combo">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -33,32 +32,39 @@
                     </div>
                     <!-------------------------DETALLES----------------------->
                     <div class="formulario__grupo">
-                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <label for="nombre" class="formulario__label">Descripci&oacute;n</label>
                         <div class="formulario__grupo-input">
-                            <textarea type="text" class="formulario__textarea" name="nombre" id="nombre" placeholder="Descripci&oacute;n de la pelicula"></textarea>
+                            <textarea type="text" class="formulario__textarea" name="descripcion" id="descripcion" placeholder="Descripci&oacute;n de la pelicula"></textarea>
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
-                            <p>El nombre solo debe contener letras</p>
+                            <p>La descripci&oacute;n solo debe contener letras</p>
                         </div>
                     </div>
-                <!--
-                    <label for="" >Nombre</label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre" pattern="Nombre de la pelicula">
-                    <br>
-                    <label for="">Detalles</label>
-                    <br>
-                    <textarea  name="detalles" id="Detalles" pattern="Detalles "></textarea>
-                    <br>
-                    <label for="">Precio</label>
-                    <br>
-                    <input type="text" name="precio" id="precio" pattern="Precio">
-                    <br>
-                    <br>
-                    <center>
-                        <button class="button-general" type="submit">Enviar</button>
-                    </center>  --> 
+                    <!-------------------------IMAGEN----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Imagen</label>
+                        <div class="formulario__grupo-input">
+                            <div class="file__botton" >
+                                <input type="file" name="imagen" id="imagen" placebolder="imagen">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-------------------------PRECIO----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Precio</label>
+                        <div class="formulario__grupo-input">
+                            <textarea type="text" class="formulario__textarea" name="precio" id="precio" placeholder="precio del combo"></textarea>
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El precio solo debe contener números</p>
+                        </div>
+                    </div>
+                        <div class="formulario__button">
+                            <button class="button-general" type="submit">Enviar</button>
+                        </div>
                 </form>  
         </div>
         <script src="js/formulario.js"></script>
