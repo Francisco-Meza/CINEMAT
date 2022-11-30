@@ -262,7 +262,7 @@ textarea{
     position: absolute;
     right: -1000px;
     top: -1000px;
-
+}
 .formulario__button-mensaje{
     display: flex;
     font-size: small;
