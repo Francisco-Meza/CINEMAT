@@ -234,7 +234,38 @@ textarea{
     margin: 0;
     color: red;
 }
+<<<<<<< HEAD
 .formulario__grupo-error-activado p{
     margin: 0;
     color: red;
 }
+=======
+/*------FILE*/
+.file__botton {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file__botton::before {
+    background-color: #8C52FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar imagen'; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .file__bottone input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+>>>>>>> 72b993b0e93a2660818dc5376ab006a3feffe8c9

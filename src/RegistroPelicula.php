@@ -20,9 +20,9 @@
                 </ul>
             </nav>
             <br>
-                <form  id="formularioPelicula" action="">
-                    <dic class="formulario__h1">
-                        <h1>Registro de pelicula</h1>
+                <form  class="formulario" action="">
+                    <dic class="formulario__h2">
+                        <h2>Registro de pelicula</h2>
                     </dic>
                     <!-------------------------NOMBRE----------------------->
                     <div class="formulario__grupo">
@@ -37,45 +37,83 @@
                     </div>
                     <!-------------------------IDIOMA----------------------->
                     <div class="formulario__grupo">
-                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <label for="nombre" class="formulario__label">Idioma</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Español">
+                           <!--<input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">--> 
+                            <select class="formulario__input" name="idioma" id="">
+                                <option value="1">Primer Valor</option>
+                                <option value="2">Segundo Valor</option>
+                                <option value="3">Tercer Valor</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <!-------------------------DURACIÓN----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Duraci&oacute;n</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
-                            <p>El nombre solo debe contener letras</p>
+                            <p>La duraci&oacute;n solo debe contener n&uacute;mero</p>
                         </div>
                     </div>
-                    <!----<br>
-                    <label for="">Idioma</label>
-                    <br>
-                    <input type="text" name="idioma" id="idioma" pattern="Idioma de la pelicula">
-                    <br>
-                    <label for="">Duraci&oacute;n</label> 
-                    <br>
-                    <input type="text" name="duración" id="duración" pattern="Nombre de la pelicula">
-                    <br>
-                    <label for="">Clasificaci&oacute;n </label>
-                    <br>
-                    <input type="text" name="clasificacion" id="clasificacion" pattern="Clasificación de la pelicula">
-                    <br>
-                    <label for=""> G&eacute;nero </label> 
-                    <br>
-                    <input type="text" name="genero" id="genero" pattern="Género de la pelicula">
-                    <br>
-                    <label for="">Formato</label>
-                    <br>
-                    <input type="text" name="formato" id="formato" pattern="Formato de la pelicula">
-                    <br>
-                    <label for="">Portada</label>
-                    <br>
-                    <input type="text" name="portada" id="Portada" pattern="Portada de la pelicula">
-                    <br>
-                    <label for="">Informaci&oacute;n </label>
-                    <br>
-                    <textarea  name="información" id="información" pattern="Información de la pelicula"></textarea>
-                    <br>
-                    <br>---->
+                    <!-------------------------CLASIFICACIÓN----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Clasificaci&oacute;n</label>
+                        <div class="formulario__grupo-input">
+                           <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
+                            <select class="formulario__input" name="idioma" id="">
+                                <option value="1">Primer Valor</option>
+                                <option value="2">Segundo Valor</option>
+                                <option value="3">Tercer Valor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-------------------------GENERO----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
+                        <div class="formulario__grupo-input">
+                            <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
+                            <select class="formulario__input" name="idioma" id="">
+                                <option value="1">Primer Valor</option>
+                                <option value="2">Segundo Valor</option>
+                                <option value="3">Tercer Valor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-------------------------FORMATO----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Formato</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="formato" id="formato" placeholder="Formato de la pelicula">
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>El formato solo debe contener letras</p>
+                        </div>
+                    </div>
+                    <!-------------------------PORTADA----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Portada</label>
+                        <div class="formulario__grupo-input">
+                            <div class="file__botton" >
+                                <input type="file" name="portada" id="portada" placebolder="Portada">
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------INFORMACIÓN----------------------->
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Informaci&oacute;n </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="informacion" id="informacion" placeholder="Información de la pelicula">
+                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__grupo-error">
+                            <p>la Informaci&oacute;n  solo debe contener letras</p>
+                        </div>
+                    </div>
                     <div class="formulario__botones">
                         <button class="button-general" type="submit">Enviar</button>
                     </div>
