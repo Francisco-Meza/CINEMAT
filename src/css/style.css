@@ -234,38 +234,40 @@ textarea{
     margin: 0;
     color: red;
 }
-<<<<<<< HEAD
+
 .formulario__grupo-error-activado p{
     margin: 0;
     color: red;
 }
-=======
+
 /*------FILE*/
-.file__botton {
-    position: relative;
-    display: inline-block;
+.file__botton.file__input-botton{
+    border: 10000px solid transparent;
+    cursor: pointer;
+    font-size: 10000px;
+    margin: 0;
+    opacity: 0;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
   }
   
-  .file__botton::before {
+  .file__botton {
     background-color: #8C52FF;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    content: 'Seleccionar imagen'; 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 0;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 400px;
   }
 
-  .file__bottone input[type="file"] {
-    opacity: 0;
-    width: 200px;
-    height: 32px;
-    display: inline-block;
-  }
   
->>>>>>> 72b993b0e93a2660818dc5376ab006a3feffe8c9
+
