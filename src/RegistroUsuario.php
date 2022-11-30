@@ -15,7 +15,7 @@
                 <div class="formulario__h2">
                     <h2>Registro</h2>
                 </div>
-                <form class="formulario" action="" onsubmit="validar()">
+                <form class="formulario" action="" onsubmit="return validar()">
                     <!---------------------------NOMBRE-------------------------------------------------->
                     <div class="formulario__grupo">
                         <label for="nombre" class="formulario__label">Nombre</label>
@@ -23,7 +23,7 @@
                             <input class="formulario__input" type="text" name="nombre" id="nombre">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
-                        <div class="formulario__grupo-error">
+                        <div class="formulario__grupo-error" id="formulario__grupo-error-nombre">
                             <p>El nombre solo debe contener letras</p>
                         </div>
                     </div>
@@ -102,7 +102,9 @@
                 password = document.getElementById("password").value;
                 password2 = document.getElementById("password2").value;
                 if(nombre == ""){
-                    document.getElementById("nombre").className = "";
+                    document.getElementById("formulario__grupo-error-nombre").classList.remove("formulario__grupo-error");
+                    document.getElementById("formulario__grupo-error-nombre").classList.add("formulario__grupo-error-activado");
+                    return false;
                 }
             }
         </script>

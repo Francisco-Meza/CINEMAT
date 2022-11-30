@@ -234,3 +234,7 @@ textarea{
     margin: 0;
     color: red;
 }
+.formulario__grupo-error-activado p{
+    margin: 0;
+    color: red;
+}
