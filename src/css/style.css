@@ -170,6 +170,12 @@ textarea{
     font-size: small;
     padding: 10px
 }
+.formulario__grupo-incorrecto label{
+    color: red;
+}
+.formulario__grupo-incorrecto input{
+    border: 1px solid red;
+}
 .formulario__label{
     display: block;
     font-weight: 700;
@@ -196,6 +202,7 @@ textarea{
     color: red;
     left: 95%;
     z-index: 100;
+    top: 27%;
     visibility: visible;
 }
 .formulario__input{
@@ -234,13 +241,25 @@ textarea{
     margin: 0;
     color: red;
 }
-<<<<<<< HEAD
 .formulario__grupo-error-activado p{
     margin: 0;
     color: red;
 }
-=======
-/*------FILE*/
+.formulario__button-mensaje{
+    display: flex;
+    font-size: small;
+    width: 100%;
+    height: 35px;
+    background-color: red;
+    margin: 10px auto;
+    justify-content: center;
+    border-radius: 7px;
+}
+.formulario__warning, .formulario__button-mensaje p{
+    margin: auto 2px;
+    color: black;
+}
+/*--------------------FILE------------------------------*/
 .file__botton {
     position: relative;
     display: inline-block;
@@ -268,4 +287,3 @@ textarea{
     display: inline-block;
   }
   
->>>>>>> 72b993b0e93a2660818dc5376ab006a3feffe8c9
