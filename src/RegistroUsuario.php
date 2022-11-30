@@ -99,6 +99,7 @@
         </div>
         <script>
             const inputs = document.querySelectorAll('.formulario input');
+            const resultadoArray = [];
             const expresiones = {
                 usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
                 nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -108,7 +109,6 @@
                 numero: /^([0-9\:])*$/
             }
             function validar(){
-                let inputsBool = [false,true,false];
                 for (let i = 0; i < inputs.length; i++) {
                     resultado = false;
                     password = "";
@@ -135,14 +135,18 @@
                         default: resultado = true;
                         break;
                     }
-                    inputsBool.push(resultado);
-                    if(resultado){
+                    if (resultadoArray[i] == null) {
+                        if(!resultado){
+                            document.getElementById(`grupo__${inputs[i].name}`).classList.add('formulario__grupo-incorrecto');
+                            document.querySelector(`#grupo__${inputs[i].name} i`).classList.replace('formulario__error', 'formulario__error-activado');
+                            document.querySelector(`#grupo__${inputs[i].name} .formulario__grupo-error`).classList.replace('formulario__grupo-error','formulario__grupo-error-activado');
+                        }
+                    }else if(resultadoArray[i] != resultado){
                         document.getElementById(`grupo__${inputs[i].name}`).classList.remove('formulario__grupo-incorrecto');
-                    }else{
-                        document.getElementById(`grupo__${inputs[i].name}`).classList.add('formulario__grupo-incorrecto');
-                        document.querySelector(`#grupo__${inputs[i].name} i`).classList.replace('formulario__error', 'formulario__error-activado');
-                        document.querySelector(`#grupo__${inputs[i].name} .formulario__grupo-error`).classList.replace('formulario__grupo-error','formulario__grupo-error-activado');
+                        document.querySelector(`#grupo__${inputs[i].name} i`).classList.replace('formulario__error-activado', 'formulario__error');
+                        document.querySelector(`#grupo__${inputs[i].name} .formulario__grupo-error-activado`).classList.replace('formulario__grupo-error-activado', 'formulario__grupo-error');
                     }
+                    resultadoArray.push(resultado);
                 }
                 return false;
             }
