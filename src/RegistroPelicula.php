@@ -99,7 +99,7 @@
                         <label for="nombre" class="formulario__label">Portada</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
-                                <input type="file" name="portada" id="portada" placebolder="Portada">
+                                <input class="file__input-botton"type="file" name="portada" id="portada" placebolder="Portada">
                             </div>
                         </div>
                     </div>
