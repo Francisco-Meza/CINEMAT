@@ -46,9 +46,6 @@
                         <button class="button-general" type="submit">Enviar</button>
                     </div>
                     
-                    <!-- <center>
-                        <button class="button-general" type="submit">Aceptar</button>
-                    </center>-->
                     <br> 
                     <center>
                     <c> <a href = "http://google.com">¿Olvidaste la constraseña?</a></c>
