@@ -299,14 +299,52 @@ textarea{
     width: 400px;
   }
   /*-------------Buscador de contenido------------*/
-#ctn-icon-search{
-    position: absolute;
-    right: 20px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+    .buscar{
+        position:relative;
+        border:black solid 1px;
+        z-index: 100;
+        /* top :20px; */
+        /* left :800px; */
+        padding:5px;
+    }
+    .buscar input{
+        width:0px;
+        height:35px;
+        padding:0 20px;
+        font-size: 12px;
+        color: #000;
+        outline: none;
+        border:1px solid rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: all 0.6s ease;
+        visibility: hidden;
+    }
+    .buscar i{
+        position:absolute;
+        left:50%;
+    }
+    /* .btn{ 
+        width:20px;
+        height:20px;
+        line-height: 20px;
+        text-align: center;
+        position: absolute;
+        background: #440000;
+        top:0;
+        right:0;
+        color:white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+    */
+    .buscar:hover{
+        /* width:240px; */
+        opacity: 1;
+    }
+    .buscar input:focus{
+        width:240px;
+        visibility: visible;
+    }
   
 
