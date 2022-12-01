@@ -35,6 +35,23 @@ function validar() {
                 break;
             default: resultado = true;
                 break;
+        /*------------------REGISTRO PELICULA---------*/
+            case "duracion":
+                resultado = (expresiones.numero.test(inputs[i].value)) ? true : false;
+                break;
+            case "portada":
+                resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
+                break;
+            case "informacion":
+                resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
+                break;
+        /*------------------REGISTRO COMBO---------*/
+            case "descripcion":
+                resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
+                break;
+            case "precio":
+                resultado = (expresiones.numero.test(inputs[i].value)) ? true : false;
+                break;
         }
         if (mapResultado.size < 6) {
             mapResultado.set(inputs[i].name, resultado);

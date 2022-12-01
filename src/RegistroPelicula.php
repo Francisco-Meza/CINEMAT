@@ -25,7 +25,7 @@
                         <h2>Registro de pelicula</h2>
                     </dic>
                     <!-------------------------NOMBRE----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la pelicula">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <!-------------------------IDIOMA----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__idioma">
                         <label for="nombre" class="formulario__label">Idioma</label>
                         <div class="formulario__grupo-input">
                            <!--<input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">--> 
@@ -46,10 +46,9 @@
                                 <option value="3">Tercer Valor</option>
                             </select>
                         </div>
-                        
                     </div>
                     <!-------------------------DURACIÓN----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__duracion">
                         <label for="nombre" class="formulario__label">Duraci&oacute;n</label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                     <!-------------------------CLASIFICACIÓN----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__clasificacion">
                         <label for="nombre" class="formulario__label">Clasificaci&oacute;n</label>
                         <div class="formulario__grupo-input">
                            <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
@@ -72,7 +71,7 @@
                         </div>
                     </div>
                     <!-------------------------GENERO----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__genero">
                         <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
                         <div class="formulario__grupo-input">
                             <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
@@ -84,7 +83,7 @@
                         </div>
                     </div>
                     <!-------------------------FORMATO----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__formato">
                         <label for="nombre" class="formulario__label">Formato</label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="formato" id="formato" placeholder="Formato de la pelicula">
@@ -95,7 +94,7 @@
                         </div>
                     </div>
                     <!-------------------------PORTADA----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo"id="grupo__portada">
                         <label for="nombre" class="formulario__label">Portada</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
@@ -104,7 +103,7 @@
                         </div>
                     </div>
                     <!-------------------------INFORMACIÓN----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__informacion">
                         <label for="nombre" class="formulario__label">Informaci&oacute;n </label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="informacion" id="informacion" placeholder="Información de la pelicula">
@@ -114,11 +113,15 @@
                             <p>la Informaci&oacute;n  solo debe contener letras</p>
                         </div>
                     </div>
-                    <div class="formulario__botones">
+                    <div class="formulario__button">
+                        <div class="formulario__button-mensaje">
+                            <p>Porfavor llena todos los campos correctamente</p>
+                            <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
+                        </div>
                         <button class="button-general" type="submit">Enviar</button>
                     </div>
                 </form>  
         </div>
-        <!--<Script src="js/formulario.js"></Script>-->
+        <Script src="js/formulario.js"></Script>
     </body>
 </html>

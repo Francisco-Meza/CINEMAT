@@ -20,7 +20,7 @@
                 <br>
                 <form class="formulario" action="" onsubmit="return validar();">
                 <!-------------------------NOMBRE----------------------->
-                <div class="formulario__grupo">
+                <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre del combo">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <!-------------------------DETALLES----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__detalles">
                         <label for="nombre" class="formulario__label">Descripci&oacute;n</label>
                         <div class="formulario__grupo-input">
                             <textarea type="text" class="formulario__textarea" name="descripcion" id="descripcion" placeholder="Descripci&oacute;n de la pelicula"></textarea>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <!-------------------------IMAGEN----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__imagen">
                         <label for="nombre" class="formulario__label">Imagen</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
@@ -52,7 +52,7 @@
                         
                     </div>
                     <!-------------------------PRECIO----------------------->
-                    <div class="formulario__grupo">
+                    <div class="formulario__grupo" id="grupo__precio">
                         <label for="nombre" class="formulario__label">Precio</label>
                         <div class="formulario__grupo-input">
                             <textarea type="text" class="formulario__textarea" name="precio" id="precio" placeholder="precio del combo"></textarea>
@@ -62,9 +62,13 @@
                             <p>El precio solo debe contener números</p>
                         </div>
                     </div>
-                        <div class="formulario__button">
-                            <button class="button-general" type="submit">Enviar</button>
+                    <div class="formulario__button">
+                        <div class="formulario__button-mensaje">
+                            <p>Porfavor llena todos los campos correctamente</p>
+                            <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
                         </div>
+                        <button class="button-general" type="submit">Enviar</button>
+                    </div>
                 </form>  
         </div>
         <script src="js/formulario.js"></script>
