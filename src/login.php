@@ -14,23 +14,12 @@
                     <h2>Login</h2>
             </div>
                 <br>
-                <form class="formulario" action="" onsubmit="return validar();">
-                <!-------------------------NOMBRE----------------------->
-                   <div class="formulario__grupo" id="grupo__nombre">
-                        <label for="nombre" class="formulario__label">Nombre</label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
-                            <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
-                        </div>
-                        <div class="formulario__grupo-error">
-                            <p>El nombre solo debe contener letras</p>
-                        </div>
-                    </div>
+                <form id="formularioLogin" action="" onsubmit="return validar();">
                      <!---------------------------CORREO-------------------------------------------------->
                      <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo electronico</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="text" name="correo" id="correo">
+                            <input class="formulario__input" type="text" name="correo" id="correo" placeholder="example@example.com">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -39,7 +28,7 @@
                     </div>
                     <!---------------------------CONTRASEÑA-------------------------------------------------->
                     <div class="formulario__grupo" id="grupo__password">
-                        <label for="password" class="formulario__label">Contrase&ntilde;a</label>
+                        <label for="password" class="formulario__label" >Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
                             <input class="formulario__input" type="password" name="password" id="password">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
@@ -68,6 +57,8 @@
                     <center>  
                     <b>Ingresar con</b>
                     <br>
+                        <a href="#"><button class="button-icon-facebook" type="submit"><i class="fa-brands fa-facebook-f"></i></button></a>
+                        <a href="#"><button class="button-icon-google" type="submit"><i class="fa-brands fa-google"></i></button></a>
                     <br>
                     <center>      
                     <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>

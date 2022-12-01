@@ -65,6 +65,15 @@ nav a:hover{
     height: 30px;
     width: 100px;
 }
+.button-icon-facebook{
+    background-color: #3b5998;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    height: 20px;
+    width: 10%;
+    height: 10%;
+}
 .button-general:hover{
     opacity: 0.8;
     cursor: pointer;
@@ -138,6 +147,10 @@ textarea{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+#formularioLogin{
+    width: 30%;
+    margin: auto;
 }
 .formulario__h2{
     text-align: center;
@@ -222,8 +235,6 @@ textarea{
     margin: 0;
     color: red;
 }
-
-
 /*------FILE*/
 .file__botton.file__input-botton{
     border: 10000px solid transparent;
@@ -261,7 +272,7 @@ textarea{
     display: inline-block;
 
   }
-  
+
   .file__botton {
     background-color: #8C52FF;
     color: #fff;
@@ -324,5 +335,3 @@ textarea{
         width:240px;
         visibility: visible;
     }
-  
-
