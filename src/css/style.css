@@ -115,29 +115,6 @@ nav a:hover{
 .centro{
     text-align: center;
 }
-/*form{
-	width:900px;
-	padding:16px;
-	border-radius:10px;
-	margin: auto;
-	background-color:rgba(143, 107, 209, 0.404);
-}*/
-/*form label{
-    text-align: center,;
-	width:72px;
-	font-weight:bold;
-	display:inline-block;
-    margin: 0 30%;
-}*/
-/*form input[type="text"],[type="password"]{
-    
-	width:180px;
-	padding:3px 10px;border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:0 40%;
-    height:25px;
-}*/
 textarea{
 	width:100%;
 	height:100px;
@@ -241,9 +218,6 @@ textarea{
     margin: 0;
     color: red;
 }
-
-
-
 .formulario__grupo-error-activado p{
     margin: 0;
     color: red;
@@ -272,6 +246,10 @@ textarea{
     margin: 10px auto;
     justify-content: center;
     border-radius: 7px;
+    display: none;
+}
+.formulario__button-mensaje-activado{
+    display: flex;
 }
 .formulario__warning, .formulario__button-mensaje p{
     margin: auto 2px;

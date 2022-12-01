@@ -55,6 +55,9 @@ function validar() {
             }
         }
     }
+    if(error > 0){
+        document.querySelector('.formulario__button-mensaje').classList.add('formulario__button-mensaje-activado');
+    }
     resultado = (error == 0) ? true:false;
     return resultado;
 }

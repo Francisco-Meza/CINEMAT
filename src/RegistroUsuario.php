@@ -12,6 +12,7 @@
             <?php
                 include("nav.html");
             ?>
+            <!-------------------------FORMULARIO--------------------------------------------------->
                 <div class="formulario__h2">
                     <h2>Registro</h2>
                 </div>
