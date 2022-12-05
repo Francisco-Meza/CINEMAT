@@ -20,7 +20,7 @@
                 </ul>
             </nav>
             <br>
-                <form  class="formulario" action="recibir.php">
+                <form  class="formulario" action="recibirPelicula.php" method="POST">
                     <dic class="formulario__h2">
                         <h2>Registro de pelicula</h2>
                     </dic>
