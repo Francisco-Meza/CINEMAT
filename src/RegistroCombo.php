@@ -58,7 +58,11 @@
                     <div class="formulario__grupo" id="grupo__precio">
                         <label for="nombre" class="formulario__label">Precio</label>
                         <div class="formulario__grupo-input">
+
                             <input type="text" class="formulario__input" name="precio" id="precio" placeholder="precio del combo">
+
+                            <textarea type="text" class="formulario__textarea" name="precio" id="precio" placeholder="Precio del combo"></textarea>
+
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">

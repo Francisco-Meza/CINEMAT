@@ -11,6 +11,7 @@
         <div class="container">
             <?php
                 include("nav.html");
+                include("conexion.php");
             ?>
             <!-------------------------FORMULARIO--------------------------------------------------->
                 <div class="formulario__h2">
