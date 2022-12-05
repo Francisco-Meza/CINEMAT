@@ -6,7 +6,8 @@ const expresiones = {
     password: /^.{4,12}$/, // 4 a 12 digitos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/, // 7 a 14 numeros.
-    numero: /^([0-9\:])*$/
+    duracion: /^([0-9\:])*$/,
+    numero: /^[0-9]\.*$/
 }
 error = 0;
 function validar() {
@@ -33,11 +34,11 @@ function validar() {
             case "password2":
                 resultado = (password == inputs[i].value && password != "") ? true : false;
                 break;
-            default: resultado = true;
+            default: resultado = false;
                 break;
         /*------------------REGISTRO PELICULA---------*/
             case "duracion":
-                resultado = (expresiones.numero.test(inputs[i].value)) ? true : false;
+                resultado = (expresiones.duracion.test(inputs[i].value)) ? true : false;
                 break;
             case "portada":
                 resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
@@ -46,14 +47,14 @@ function validar() {
                 resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
                 break;
         /*------------------REGISTRO COMBO---------*/
-            case "descripcion":
+            case "detalles":
                 resultado = (expresiones.nombre.test(inputs[i].value)) ? true : false;
                 break;
             case "precio":
                 resultado = (expresiones.numero.test(inputs[i].value)) ? true : false;
                 break;
         }
-        if (mapResultado.size < 6) {
+        if (mapResultado.size < inputs.length) {
             mapResultado.set(inputs[i].name, resultado);
             if (!mapResultado.get(inputs[i].name)) {
                 incorrecto(inputs[i].name);

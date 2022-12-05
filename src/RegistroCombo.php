@@ -34,7 +34,7 @@
                     <div class="formulario__grupo" id="grupo__detalles">
                         <label for="nombre" class="formulario__label">Descripci&oacute;n</label>
                         <div class="formulario__grupo-input">
-                            <textarea type="text" class="formulario__textarea" name="descripcion" id="descripcion" placeholder="Descripci&oacute;n de la pelicula"></textarea>
+                            <textarea type="text" class="formulario__textarea" name="detalles" id="detalles" placeholder="Descripci&oacute;n de la pelicula"></textarea>
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -47,15 +47,18 @@
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
                                 <input type="file" name="imagen" id="imagen" placebolder="imagen">
+                                <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                             </div>
                         </div>
-                        
+                        <div class="formulario__grupo-error">
+                            <p>Solo insertar imagen</p>
+                        </div>
                     </div>
                     <!-------------------------PRECIO----------------------->
                     <div class="formulario__grupo" id="grupo__precio">
                         <label for="nombre" class="formulario__label">Precio</label>
                         <div class="formulario__grupo-input">
-                            <textarea type="text" class="formulario__textarea" name="precio" id="precio" placeholder="precio del combo"></textarea>
+                            <input type="text" class="formulario__input" name="precio" id="precio" placeholder="precio del combo">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
