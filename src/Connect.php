@@ -14,7 +14,7 @@ class Cconexion{
 			echo "se conectó correctamente a la base de datos";
 		}
 		catch(PDOException $exp){
-			echo("No se logró conectar correctamente con la base de datos: $dbname,error: $exp")
+			echo ("No se logró conectar correctamente con la base de datos: $dbname,error: $exp");
 		}
 		return $conn;
 	}
