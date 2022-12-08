@@ -10,7 +10,7 @@ class Cconexion{
 		$puerto=1433;
 
 		try{
-			$conn = new PDO ("sqlsrv:Server-$host,$puerto;Database-$dbname"$dbname,$username,$pasword);
+			$conn = new PDO ("sqlsrv:Server-$host,$puerto;Database=$dbname",$username,$pasword);
 			echo "se conectó correctamente a la base de datos";
 		}
 		catch(PDOException $exp){
