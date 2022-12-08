@@ -1,8 +1,8 @@
 <?php
-class Cconexion(){
+class Cconexion{
 
 
-	funcion conexionBD{
+	function conexionBD(){
 		$host='localhost';
 		$dbname='CINEMAT_VALLARTA';
 		$username='Marlene';
