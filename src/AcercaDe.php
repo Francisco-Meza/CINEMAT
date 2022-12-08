@@ -11,6 +11,11 @@
         <div class= "container">
             <?php
                 include("nav.html");
+                session_start();
+                if(!isset($_SESSION["correo"])){
+                    header("Location: login.php");
+                }
+
             ?>
             <div class="centrado">
                     <center>

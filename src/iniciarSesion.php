@@ -9,6 +9,7 @@
             <?php
                 include("nav.html");
                 include("conexion.php");
+
                 if(isset($_GET['error'])){
                     if($_GET['error']=='1'){
                         echo "<b>Error en usuario o contraseña.</b>";
