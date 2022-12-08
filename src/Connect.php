@@ -2,11 +2,11 @@
 class Cconexion{
 
 
-	function conexionBD(){
+	static function conexionBD(){
 		$host='localhost';
-		$dbname='CINEMAT_VALLARTA';
-		$username='Marlene';
-		$pasword='0602';
+		$dbname='CINEMAT_IXTAN';
+		$username='sa';
+		$pasword='021202';
 		$puerto=1433;
 
 		try{

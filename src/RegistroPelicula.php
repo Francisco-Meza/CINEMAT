@@ -10,7 +10,7 @@
     <body> 
         <?php
             include_once("Connect.php");
-            Cconexion :: conexionBD();
+            Cconexion::conexionBD();
         ?>
         <div class="container">
             <?php
