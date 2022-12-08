@@ -1,12 +1,23 @@
 <?php
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$dbname = 'cinemat';
+class Cconexion(){
 
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname)
-	or die ('Ocurrio un error al conectarse al servidor mysql');
+	
+	funcion conexionBD{
+	$host='localhost';
+	$dbname='CINEMAT_VALLARTA';
+	$username='Marlene';
+	$pasword='0602';
+	$puerto=1433;
+
+	try{
+		$conn = new PDO ("sqlsrv:Server-$host,$puerto;Database-$dbname"$dbname,$username,$pasword);
+		echo "se conectó correctamente a la base de datos";
+	}
+	catch(PDOException $exp){
+		echo("No se logró conectar correctamente con la base de datos: $dbname,error: $exp")
+	}
+	return $conn;
+	}
+	
+}
 ?>

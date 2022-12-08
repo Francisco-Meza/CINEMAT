@@ -7,7 +7,11 @@
         <title>Registro de una pelicula</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body> 
+        <?php
+            include_once("connet.php");
+            Cconexion :: conexionBD();
+        ?>
         <div class="container">
             <?php
                 include("nav.html");
@@ -20,7 +24,7 @@
                 </ul>
             </nav>
             <br>
-                <form  class="formulario" action="recibirPelicula.php" method="POST">
+                <form  class="formulario" action="recibirPelicula.php" method="$_POST">
                     <dic class="formulario__h2">
                         <h2>Registro de pelicula</h2>
                     </dic>
