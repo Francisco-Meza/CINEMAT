@@ -9,7 +9,7 @@
     </head>
     <body> 
         <?php
-            include_once("connet.php");
+            include_once("Connect.php");
             Cconexion :: conexionBD();
         ?>
         <div class="container">
