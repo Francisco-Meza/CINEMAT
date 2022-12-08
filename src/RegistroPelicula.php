@@ -8,10 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body> 
-        <?php
-            include_once("Connect.php");
-            Cconexion::conexionBD();
-        ?>
+        
         <div class="container">
             <?php
                 include("nav.html");
@@ -55,7 +52,7 @@
                     <div class="formulario__grupo" id="grupo__duracion">
                         <label for="nombre" class="formulario__label">Duraci&oacute;n</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">
+                            <input type="text" class="formulario__input" name="duracion" id="duracion" placeholder="Duración de la pelicula">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -67,7 +64,7 @@
                         <label for="nombre" class="formulario__label">Clasificaci&oacute;n</label>
                         <div class="formulario__grupo-input">
                            <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
-                            <select class="formulario__input" name="idioma" id="">
+                            <select class="formulario__input" name="clasificacion" id="">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
                                 <option value="3">Tercer Valor</option>
@@ -79,7 +76,7 @@
                         <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
                         <div class="formulario__grupo-input">
                             <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
-                            <select class="formulario__input" name="idioma" id="">
+                            <select class="formulario__input" name="genero" id="">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
                                 <option value="3">Tercer Valor</option>
