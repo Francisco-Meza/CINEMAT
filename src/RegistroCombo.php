@@ -18,7 +18,7 @@
                     </ul>
                 </nav>
                 <br>
-                <form class="formulario" action="" onsubmit="return validar();">
+                <form class="formulario" action="" method="post" onsubmit="return validar();">
                 <!-------------------------NOMBRE----------------------->
                 <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
@@ -43,10 +43,10 @@
                     </div>
                     <!-------------------------IMAGEN----------------------->
                     <div class="formulario__grupo" id="grupo__imagen">
-                        <label for="nombre" class="formulario__label">Imagen</label>
+                        <label for="nombre__imagen" class="formulario__label">Imagen</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
-                                <input type="file" name="imagen" id="imagen" placebolder="imagen">
+                                <input type="file" name="imagen" id="imagen" placebolder="Imagen">
                                 <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                             </div>
                         </div>
@@ -60,8 +60,6 @@
                         <div class="formulario__grupo-input">
 
                             <input type="text" class="formulario__input" name="precio" id="precio" placeholder="precio del combo">
-
-                            <textarea type="text" class="formulario__textarea" name="precio" id="precio" placeholder="Precio del combo"></textarea>
 
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
