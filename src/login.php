@@ -1,3 +1,10 @@
+<?php
+                if(isset($_GET['error'])){
+                    if($_GET['error']=='1'){
+                        echo "<b>Error en usuario o contraseña.</b>";
+                    }
+                }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,13 +15,9 @@
         <div class="container">
             <?php
                 include("nav.html");
-                include("conexion.php");
-                if(isset($_GET['error'])){
-                    if($_GET['error']=='1'){
-                        echo "<b>Error en usuario o contraseña.</b>";
-                    }
-                }
+                include("Connect.php");
             ?>
+
             <div class="formulario__h2">
                     <h2>Login</h2>
             </div>
