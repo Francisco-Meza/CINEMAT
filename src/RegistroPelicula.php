@@ -21,7 +21,7 @@
                 </ul>
             </nav>
             <br>
-                <form  class="formulario" action="recibirPelicula.php" method="$_POST">
+                <form  class="formulario" action="recibirPelicula.php" method="post">
                     <dic class="formulario__h2">
                         <h2>Registro de pelicula</h2>
                     </dic>
@@ -64,7 +64,7 @@
                         <label for="nombre" class="formulario__label">Clasificaci&oacute;n</label>
                         <div class="formulario__grupo-input">
                            <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
-                            <select class="formulario__input" name="clasificacion" id="">
+                            <select class="formulario__input" name="clasificacion" id="clasificacion">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
                                 <option value="3">Tercer Valor</option>
@@ -76,7 +76,7 @@
                         <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
                         <div class="formulario__grupo-input">
                             <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
-                            <select class="formulario__input" name="genero" id="">
+                            <select class="formulario__input" name="genero" id="genero">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
                                 <option value="3">Tercer Valor</option>
@@ -96,7 +96,7 @@
                     </div>
                     <!-------------------------PORTADA----------------------->
                     <div class="formulario__grupo"id="grupo__portada">
-                        <label for="nombre" class="formulario__label">Portada</label>
+                        <label for="portada" class="formulario__label">Portada</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
                                 <input class="file__input-botton"type="file" name="portada" id="portada" placebolder="Portada">
@@ -105,7 +105,7 @@
                     </div>
                     <!-------------------------INFORMACIÓN----------------------->
                     <div class="formulario__grupo" id="grupo__informacion">
-                        <label for="nombre" class="formulario__label">Informaci&oacute;n </label>
+                        <label for="informacion" class="formulario__label">Informaci&oacute;n </label>
                         <div class="formulario__grupo-input">
                             <input type="text" class="formulario__input" name="informacion" id="informacion" placeholder="Información de la pelicula">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
@@ -119,7 +119,7 @@
                             <p>Porfavor llena todos los campos correctamente</p>
                             <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
                         </div>
-                        <button class="button-general" type="submit">Enviar</button>
+                        <button class="button-general"  type="submit">Enviar</button>
                     </div>
                 </form>  
         </div>
