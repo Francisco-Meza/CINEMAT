@@ -11,7 +11,6 @@
     <div class="container">
       <?php
         include('nav.html');
-        include('Connect.php');
       ?>
       <section>
         <div id="section-main">
