@@ -48,11 +48,7 @@
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
                                 <input type="file" name="imagen" id="imagen" placebolder="Imagen">
-                                <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                             </div>
-                        </div>
-                        <div class="formulario__grupo-error">
-                            <p>Solo insertar imagen</p>
                         </div>
                     </div>
                     <!-------------------------PRECIO----------------------->
