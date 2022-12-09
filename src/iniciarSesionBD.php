@@ -1,28 +1,27 @@
 <?php
-    if(isset($_POST["CORREO"])){
-        $CORREO=addslashes($_POST["CORREO"]);
+    if(isset($_POST["correo"])){
+        $correo=addslashes($_POST["correo"]);
     }
     else{
-        $CORREO="";        
+        $correo="";        
     }
-    if(isset($_POST["PASSWORD"])){
-        $PASSWORD=addslashes($_POST["PASSWORD"]);
+    if(isset($_POST["password"])){
+        $password=addslashes($_POST["password"]);
     }
     else{
-        $PASSWORD="";
+        $password="";
     }
-    include('connect.php');
-        $consulta="select * from CLIENTE where CORREO='$CORREO' and PASSWORD='$PASSWORD'";
+    include('Connect.php');
+        $consulta="select * from CLIENTE where correo='$correo' and password='$password'";
         $resultado=mysqli_query($conn, $consulta)or die('Error al consultar administrador');
         $i=1;
         while($fila=mysqli_fetch_array($resultado)){
         echo 'Sesión iniciada';
         session_start();
-        $_SESSION['CORREO']=$CORREO;
-        $_SESSION['PASSWORD']=$PASSWORD;
+        $_SESSION['correo']=$correo;
+        $_SESSION['password']=$password;
         header("Location: index.php");
         die;
         }
     header("Location: login.php?error=1");
-
 ?>
