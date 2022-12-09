@@ -8,9 +8,14 @@
         <!-- Contenido principal -->
         <div class="container">
                 <?php
+                    include('Connect.php');
                     include('nav.html');
+                    session_start();
+                    if(!isset($_SESSION["correo"])){
+                        header("Location: login.php");
+                    }
                 ?>
-                
+
         <div class="portadas">
             <div class="portadas-banner">
                 <h2>Combo Feliz</h2>

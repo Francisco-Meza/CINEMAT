@@ -1,10 +1,3 @@
-<?php
-                if(isset($_GET['error'])){
-                    if($_GET['error']=='1'){
-                        echo "<b>Error en usuario o contraseña.</b>";
-                    }
-                }
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,12 +10,18 @@
                 include("nav.html");
                 include("Connect.php");
             ?>
-
             <div class="formulario__h2">
                     <h2>Login</h2>
-            </div>
+                    <br>
+                    <?php
+                        if(isset($_GET['error'])){
+                        if($_GET['error']=='1'){
+                            echo "<b>Error en usuario o contraseña.</b>";
+                        }
+                    }
+                    ?>
                 <br>
-                <form id="formularioLogin" action="" onsubmit="return validar();">
+                <form id="formularioLogin" action="iniciarSesionBD.php" method="post" onsubmit="return validar();">
                      <!---------------------------CORREO-------------------------------------------------->
                      <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo electronico</label>
@@ -69,6 +68,8 @@
                     <a>¿No tienes cuenta? <a href = "RegistroUsuario.php">Reg&iacute;strate aqu&iacute;</a></a>
                     <br>
                 </form>  
+            </div>
+                
         </div>
         <script src="js/formulario.js"></script>
     </body>

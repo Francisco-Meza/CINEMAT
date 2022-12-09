@@ -9,6 +9,7 @@
         <div class="container">
             <?php
                 include("nav.html"); 
+                include("Connect.php");
             ?>
                 <br>
                 <nav>
