@@ -15,5 +15,5 @@
     VALUES ('','$nombre','$descripcion','$precio','$imagen)";
      $resul = mysqli_query($conectar, $sql)or triger_error("Query Failed! SQL - Error: ".mysqli_error($conectar),E_USER_ERROR);
 
-     echo "$sql";a
+     echo "$sql";
 ?>
