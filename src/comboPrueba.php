@@ -19,7 +19,7 @@
         <div class="portadas">
             <div class="portadas-banner">
                 <h2>Combo Feliz</h2>
-                <button class="button-portada">Detalles</button>
+                <a><button href="InformacionPelicula.php" class="button-portada">Detalles</button></a>
             </div>
             <div class="portadas-banner">
                 <h2>Combo Pareja</h2>
