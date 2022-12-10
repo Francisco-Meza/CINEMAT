@@ -39,8 +39,7 @@
                     <!-------------------------IDIOMA----------------------->
                     <div class="formulario__grupo" id="grupo__idioma">
                         <label for="nombre" class="formulario__label">Idioma</label>
-                        <div class="formulario__grupo-input">
-                           <!--<input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">--> 
+                        <div class="formulario__grupo-input"> 
                             <select class="formulario__input" name="idioma" id="">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
@@ -63,7 +62,6 @@
                     <div class="formulario__grupo" id="grupo__clasificacion">
                         <label for="nombre" class="formulario__label">Clasificaci&oacute;n</label>
                         <div class="formulario__grupo-input">
-                           <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
                             <select class="formulario__input" name="clasificacion" id="clasificacion">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
@@ -75,7 +73,6 @@
                     <div class="formulario__grupo" id="grupo__genero">
                         <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
                         <div class="formulario__grupo-input">
-                            <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
                             <select class="formulario__input" name="genero" id="genero">
                                 <option value="1">Primer Valor</option>
                                 <option value="2">Segundo Valor</option>
