@@ -12,7 +12,7 @@
 
     $conectar=conn();
     $sql="INSERT INTO combo(ID_COMBO,NOMBRE,DESCRIPCION, PRECIO_VENTA,IMAGEN) 
-    VALUES ('','$nombre','$descripcion','$precio','$imagen);
+    VALUES ('','$nombre','$descripcion','$precio','$imagen)";
      $resul = mysqli_query($conectar, $sql)or triger_error("Query Failed! SQL - Error: ".mysqli_error($conectar),E_USER_ERROR);
 
      echo "$sql";
