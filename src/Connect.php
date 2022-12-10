@@ -1,7 +1,7 @@
 <?php
-	$servername = "189.182.55.213";
+	$servername = "localhost";
 	$database = "cinemat";
-	$username = "equipo";
+	$username = "root";
 	$password = "";
 	$conn = mysqli_connect($servername, $username, $password, $database)
 	 or die("Connection failed: " . mysqli_connect_error());
