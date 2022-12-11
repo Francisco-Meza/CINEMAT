@@ -1,25 +1,29 @@
 <?php
     include("Connect.php");
+    $nombre=$_POST['nombre'];
+    $duracion=$_POST['duracion'];
+    $genero=$_POST['genero'];
+    $idioma=$_POST['idioma'];
+    $clasificacion=$_POST['clasificacion'];
+    $informacion=$_POST['informacion'];
     if(isset($_POST['id'])){
         $id = $_POST['id'];
-        echo "Si hay id" . $id;
-        if(isset($_FILES['foto']['name']))
+        echo "Si hay id" . $_FILES['foto']['name'];
+        $sql = "UPDATE PELICULA SET NOMBRE = '$nombre', DURACION = '$duracion', ID_GENERERO = $genero, ID_IDIOMA = $idioma, ID_CLASIFICACION = $clasificacion, INFORMACION='$informacion'";
+        if($_FILES['foto']['name'] != "")
         {
             $foto = ConvertirImagen();
+            $sql = $sql.", PORTADA = '$foto'";
         }
+        $sql = $sql . "WHERE ID_PELICULA = $id";
+        $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
     }else{
-        $nombre=$_POST['nombre'];
-        $duracion=$_POST['duracion'];
-        $genero=$_POST['genero'];
-        $idioma=$_POST['idioma'];
-        $clasificacion=$_POST['clasificacion'];
-        $informacion=$_POST['informacion'];
         $foto = ConvertirImagen();
         $sql="INSERT INTO pelicula(NOMBRE, ID_IDIOMA, DURACION,ID_CLASIFICACION,ID_GENERERO,PORTADA,INFORMACION)
         VALUES ('$nombre','$idioma','$duracion','$clasificacion','$genero','$foto','$informacion')";
         $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
-        header("Location:index.php");
     }
+    header("Location:index.php");
     function ConvertirImagen(){
         if(isset($_FILES['foto']['name']))
         {

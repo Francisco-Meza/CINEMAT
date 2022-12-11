@@ -65,6 +65,9 @@ nav a:hover{
     height: 30px;
     width: 100px;
 }
+.carro{
+    width: 150px;
+}
 .button-icon-facebook{
     background-color: #3b5998;
     border: none;
@@ -336,4 +339,25 @@ textarea{
     .buscar input:focus{
         width:240px;
         visibility: visible;
+    }
+    /*--------------------------------------TABLAS------------------------------------*/
+    table{
+        margin: auto;
+        margin-top: 1%;
+        text-align: left;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    table th{
+        background-color: #8148F4;
+        color: white;
+    }
+    th, td{
+        padding: 0;
+    }
+    tr:nth-child(even){
+        background-color: #ddd;
+    }
+    tr:hover{
+        background-color: #8148F4;
     }

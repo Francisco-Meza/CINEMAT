@@ -13,8 +13,8 @@
         $descripcion=$_POST['descripcion'];
         $precio=$_POST['precio'];
         $imagen=ConvertirImagen();
-        $sql="INSERT INTO combo(ID_COMBO,NOMBRE,DESCRIPCION, PRECIO_VENTA,IMAGEN) 
-        VALUES ('','$nombre','$descripcion','$precio','$imagen')";
+        $sql="INSERT INTO combo(NOMBRE,DESCRIPCION, PRECIO_VENTA,IMAGEN) 
+        VALUES ('$nombre','$descripcion','$precio','$imagen')";
          $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
          header("Location:comboPrueba.php");
     }
