@@ -337,3 +337,45 @@ textarea{
         width:240px;
         visibility: visible;
     }
+/* Pruebas de mostrar usuario */
+#acceso{
+    background-color: black;
+    color: white;
+}
+/* pseudoclase */
+#acceso>a:link{
+    color:white;
+    text-decoration:none;
+}
+#acceso> a:hover{
+    color:cornflowerblue;
+}
+.contenedor{
+    width:100%;
+    border-spacing:0px;
+}
+body{
+    margin:0px;
+}
+.contenedor>td{
+    padding:0px;
+}
+.opcionMenu{
+    width:100px;
+    background-color: #feaf5f;
+    height:25px;
+    text-align: center;
+    font-family: "arial";
+}
+.opcionMenu:hover{
+    font-weight: bold;
+    background-color:antiquewhite;
+    color:white;
+
+}
+.contenido{
+    background-color: #e2e0e0;
+}
+.tabla{
+    background-color: #e2e0e0;   
+}

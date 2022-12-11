@@ -10,6 +10,10 @@
             <?php
                 include("nav.html"); 
                 include("Connect.php");
+                // session_start();
+                // if(!isset($_SESSION["correo"])){
+                //     header("Location: login.php");
+                // }
             ?>
                 <br>
                 <nav>
@@ -33,7 +37,7 @@
                     </div>
                     <!-------------------------DESCRIPCION----------------------->
                     <div class="formulario__grupo" id="grupo__detalles">
-                        <label for="descripcion" class="formulario__label">descripcion del combo</label>
+                        <label for="descripcion" class="formulario__label">Descripci&oacute;n</label>
                         <div class="formulario__grupo-input">
                             <textarea type="text" class="formulario__textarea" name="descripcion" id="descripcion" placeholder="Detalles del combo"></textarea>
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
