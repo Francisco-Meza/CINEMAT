@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informacion de la pelicula</title>
     <link rel="stylesheet" href="css/InformacionPelicula.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <?php
-        include('nav.html');
+      include('nav.html');
+      include("Connect.php");
+      $id = $_GET["id"];
+      $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
+      $res = mysqli_query($conn, $query) or die("No se pudo ejecutar la consulta");
+      $data = mysqli_fetch_assoc($res);
       ?>
       <section>
         <div id="section-main">
           <div id="section-main-detalles">
             <div id="section-main-detalles-informacion">
-              <h1>Nombre de la pelicula</h1>
+              <h1><?php echo $data['NOMBRE']; ?></h1>
               <p class="section-main-detalles-informacion-parrafos">
                 Dia <span>Dia tal</span>
               </p>
@@ -26,22 +32,12 @@
             </div>
             <div id="section-main-detalles-descripcion">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <?php echo $data['INFORMACION']; ?>
               </p>
             </div>
             <button>Añadir al carrito</button>
           </div>
-          <img
-            id="section-main-imagen"
-            src="assets/ejemplo.jpg"
-            alt="Portada de ejemplo"
-          />
+          <img id="section-main-imagen" src="data:image/jpg;base64,<?php echo base64_encode($data['PORTADA']); ?>" alt="Portada de ejemplo"/>
         </div>
       </section>
     </div>
