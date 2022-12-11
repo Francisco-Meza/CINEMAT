@@ -16,7 +16,7 @@
         $sql="INSERT INTO combo(ID_COMBO,NOMBRE,DESCRIPCION, PRECIO_VENTA,IMAGEN) 
         VALUES ('','$nombre','$descripcion','$precio','$imagen')";
          $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
-         header("Location:comboPueba.php");
+         header("Location:comboPrueba.php");
     }
         function ConvertirImagen(){
             if(isset($_FILES['imagen']['name']))
