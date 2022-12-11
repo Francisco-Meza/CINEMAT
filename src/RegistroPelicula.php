@@ -12,6 +12,7 @@
         <div class="container">
             <?php
                 include("nav.html");
+                include("Connect.php");
             ?>
             <br>
             <nav>
@@ -41,13 +42,11 @@
                         <label for="nombre" class="formulario__label">Idioma</label>
                         <div class="formulario__grupo-input">
                            <!--<input type="text" class="formulario__input" name="idioma" id="idioma" placeholder="Idioma de la pelicula">--> 
-                            <select class="formulario__input" name="idioma" id="">
+                            <select class="formulario__input" name="idioma" id="idioma">
                                 <?php
-                                include_once("Connect.php");
                                 $consulta = "SELECT * FROM idioma";
                                 $ejecutar = mysqli_query($conn, $consulta)
                                     or die("no se pudo leer los idiomas");
-
                                 foreach($ejecutar as $opciones){
                                     echo "<option value='".$opciones['id']."'>".$opciones['nombre']."</option>";
                                 }
@@ -73,11 +72,9 @@
                            <!--<input type="text" class="formulario__input" name="clasificacion" id="clasificacion" placeholder="Clasificación de la pelicula">--> 
                             <select class="formulario__input" name="clasificacion" id="clasificacion">
                                 <?php
-                                include_once("Connect.php");
                                 $consulta = "SELECT * FROM clasificacion";
                                 $ejecutar = mysqli_query($conn, $consulta)
                                     or die("no se pudo leer las clasificaciones");
-
                                 foreach($ejecutar as $opciones){
                                     echo "<option value='".$opciones['id']."'>".$opciones['nombre']."</option>";
                                 }
@@ -92,11 +89,9 @@
                             <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
                             <select class="formulario__input" name="genero" id="genero">
                                 <?php
-                                include_once("Connect.php");
                                 $consulta = "SELECT * FROM genero";
                                 $ejecutar = mysqli_query($conn, $consulta)
                                     or die("no se pudo leer los generos");
-
                                 foreach($ejecutar as $opciones){
                                     echo "<option value='".$opciones['id']."'>".$opciones['nombre']."</option>";
                                 }
@@ -124,6 +119,26 @@
                             </div>
                         </div>
                     </div>
+                    <!-------------------------------ID-->
+                    <?php
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
+                $res = mysqli_query($conn, $query);
+                $data = mysqli_fetch_assoc($res);
+                ?>
+                <script>
+                     document.getElementById('nombre').value = "<?php echo $data['NOMBRE']; ?>"
+                     document.getElementById('idioma').value = "<?php echo $data['ID_IDIOMA']; ?>"
+                     document.getElementById('duracion').value = "<?php echo $data['DURACION']; ?>"
+                     document.getElementById('clasificacion').value = "<?php echo $data['ID_CLASIFICACION']; ?>"
+                     document.getElementById('genero').value = "<?php echo $data['ID_GENERERO']; ?>"
+                     document.getElementById('informacion').value = "<?php echo $data['INFORMACION']; ?>"
+                </script>
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <?php
+            }
+        ?>
                     <!----------------------------------------------------------------->
                     <div class="formulario__button">
                         <div class="formulario__button-mensaje">
