@@ -27,7 +27,7 @@
             <th>IDIOMA</th>
             <th>DURACIÓN</th>
             <th>CLASIFICACIÓN</th>
-            <th>GÉERO</th>
+            <th>GÉNERO</th>
             <th>ACCIÓN</th>
         </tr>
         <?php

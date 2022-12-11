@@ -20,13 +20,13 @@
                 <br>
                 <form enctype="multipart/form-data" class="formulario" action="recibirPelicula.php" method="post">
                     <dic class="formulario__h2"> 
-                        <h2>Registro de pelicula</h2>
+                        <h2>Registro de películas</h2>
                     </dic>
                     <!-------------------------NOMBRE----------------------->
                     <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la pelicula">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre de la película">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -54,7 +54,7 @@
                     <div class="formulario__grupo" id="grupo__duracion">
                         <label for="nombre" class="formulario__label">Duraci&oacute;n</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="duracion" id="duracion" placeholder="Duración de la pelicula">
+                            <input type="text" class="formulario__input" name="duracion" id="duracion" placeholder="Duración de la película">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -80,7 +80,7 @@
                     </div>
                     <!-------------------------GENERO----------------------->
                     <div class="formulario__grupo" id="grupo__genero">
-                        <label for="nombre" class="formulario__label">Gen&eacute;ro</label>
+                        <label for="nombre" class="formulario__label">G&eacute;nero</label>
                         <div class="formulario__grupo-input">
                             <!--<input type="text" class="formulario__input" name="genero" id="genero" placeholder="Género de la pelicula">-->
                             <select class="formulario__input" name="genero" id="genero">
@@ -99,7 +99,7 @@
                     <div class="formulario__grupo" id="grupo__informacion">
                         <label for="informacion" class="formulario__label">Informaci&oacute;n </label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="informacion" id="informacion" placeholder="Información de la pelicula">
+                            <input type="text" class="formulario__input" name="informacion" id="informacion" placeholder="Información de la película">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
