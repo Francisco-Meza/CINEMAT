@@ -29,15 +29,15 @@
                 </div>
                 <div  id="section-main-detalles-descripcion">
                 <p>
-                    <?php echo $data['PRECIO_VENTA']; ?>
+                    $<?php echo $data['PRECIO_VENTA']; ?>
                 </p>
                 </div>
-                <button  class = "button-general">Añadir al carrito</button>
+                <button  class = "button-general carro">Añadir al carrito</button>
           </div>
           <img id="section-main-imagen" class="bordes"  src="data:image/jpg;base64,<?php echo base64_encode($data['IMAGEN']); ?>" alt="imagen de ejemplo"/>
         </div>
       </section>
-      <a href="registroCombo.php"<?php echo $id ?>"><button  class="button-general">Modificar</button></a>
+      <a href="registroCombo.php?id=<?php echo $id ?>"><button  class="button-general">Modificar</button></a>
     </div>
   </body>
 </html>

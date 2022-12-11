@@ -14,7 +14,7 @@
       include('nav.html');
       include("Connect.php");
       $id = $_GET["id"];
-      $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
+      $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma, PORTADA, INFORMACION FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id and ID_PELICULA = $id";
       $res = mysqli_query($conn, $query) or die("No se pudo ejecutar la consulta");
       $data = mysqli_fetch_assoc($res);
       ?>
@@ -23,6 +23,12 @@
           <div id="section-main-detalles">
             <div id="section-main-detalles-informacion">
               <h1><?php echo $data['NOMBRE']; ?></h1>
+              <div class="detalles-pelicula">
+                <div id="det-clasificacion"><?php echo $data['clasificacion']; ?></div>
+                <div id="det-duracion"><?php echo $data['DURACION']; ?> Hrs</div>
+                <div id="det-genero"><?php echo $data['genero']; ?></div>
+                <div id="det-idioma"><?php echo $data['idioma']; ?></div>
+              </div>
               <p class="section-main-detalles-informacion-parrafos">
                 Dia <span>Dia tal</span>
               </p>
