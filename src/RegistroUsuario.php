@@ -41,8 +41,8 @@
                         <label for="fecha_Nac" class="formulario__label">Fecha de nacimiento</label>
                         <div class="formulario__grupo-input">
                             <input type="date" id="fecha_Nac" name="fecha_Nac" class="formulario__input"
-                                value="2018-07-22"
-                                min="2018-01-01" max="2018-12-31">
+                                value="2000-01-01"
+                                min="1950-01-01" max="2020-12-31">
                         </div>
                         <div class="formulario__grupo-error">
                             <p>Tienes que ser un adulto</p>
@@ -90,11 +90,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <label for="pago" class="formulario__label">Forma de pago</label>
-                    <input class="formulario__input" type="text" name="pago" id="pago" pattern="Forma de pago">
-                    <label for="codigo" class="formulario__label">Codig&oacute;</label>
-                    <input class="formulario__input" type="text" name="codigo" id="codigo" pattern="codigo">-->
                     <div class="formulario__button">
                         <div class="formulario__button-mensaje">
                             <p>Porfavor llena todos los campos correctamente</p>
