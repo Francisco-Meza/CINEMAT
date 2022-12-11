@@ -15,11 +15,10 @@
                 //     header("Location: login.php");
                 // }
             ?>
-                <br>
                 <nav>
                     <ul>
                         <li><a href="RegistroCombo.php">Registro Combo</a></li>
-                        <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
+                        <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>                     
                     </ul>
                 </nav>
                 <br>
