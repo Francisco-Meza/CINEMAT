@@ -11,14 +11,6 @@
                 include("nav.html");
                 include("Connect.php");
             ?>
-            <br>
-            <nav>
-                <ul>
-                    <li><a href="RegistroCombo.php">Registro Combo</a></li>
-                    <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
-                </ul>
-            </nav>
-            <br>
                 <form enctype="multipart/form-data" class="formulario" action="recibirPelicula.php" method="post">
                     <dic class="formulario__h2"> 
                         <h2>Registro de pelicula</h2>

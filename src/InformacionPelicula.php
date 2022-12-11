@@ -35,12 +35,11 @@
                 <?php echo $data['INFORMACION']; ?>
               </p>
             </div>
-            <button class = "button-general">Añadir al carrito</button>
+            <button class = "button-general carro">Añadir al carrito</button>
           </div>
           <img id="section-main-imagen" src="data:image/jpg;base64,<?php echo base64_encode($data['PORTADA']); ?>" alt="Portada de ejemplo"/>
         </div>
       </section>
-      <a href="registroPelicula.php?id=<?php echo $id ?>"><button class="button-general">Modificar</button></a>
     </div>
   </body>
 </html>

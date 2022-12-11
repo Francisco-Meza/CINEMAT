@@ -26,7 +26,7 @@ nav ul li{
 }
 nav ul{
     margin: auto 0;
-    margin-right: 30%;
+    margin-right: 10%;
 }
 nav ul li:hover{
     cursor: pointer;
@@ -64,6 +64,9 @@ nav a:hover{
     color: white;
     height: 30px;
     width: 100px;
+}
+.carro{
+    width: 150px;
 }
 .button-icon-facebook{
     background-color: #3b5998;
@@ -337,45 +340,24 @@ textarea{
         width:240px;
         visibility: visible;
     }
-/* Pruebas de mostrar usuario */
-#acceso{
-    background-color: black;
-    color: white;
-}
-/* pseudoclase */
-#acceso>a:link{
-    color:white;
-    text-decoration:none;
-}
-#acceso> a:hover{
-    color:cornflowerblue;
-}
-.contenedor{
-    width:100%;
-    border-spacing:0px;
-}
-body{
-    margin:0px;
-}
-.contenedor>td{
-    padding:0px;
-}
-.opcionMenu{
-    width:100px;
-    background-color: #feaf5f;
-    height:25px;
-    text-align: center;
-    font-family: "arial";
-}
-.opcionMenu:hover{
-    font-weight: bold;
-    background-color:antiquewhite;
-    color:white;
-
-}
-.contenido{
-    background-color: #e2e0e0;
-}
-.tabla{
-    background-color: #e2e0e0;   
-}
+    /*--------------------------------------TABLAS------------------------------------*/
+    table{
+        margin: auto;
+        margin-top: 1%;
+        text-align: left;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    table th{
+        background-color: #8148F4;
+        color: white;
+    }
+    th, td{
+        padding: 0;
+    }
+    tr:nth-child(even){
+        background-color: #ddd;
+    }
+    tr:hover{
+        background-color: #8148F4;
+    }
