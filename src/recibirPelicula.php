@@ -20,6 +20,6 @@
     }
     $sql="INSERT INTO pelicula(NOMBRE, ID_IDIOMA, DURACION,ID_CLASIFICACION,ID_GENERERO,PORTADA,INFORMACION)
      VALUES ('$nombre','$idioma','$duracion','$clasificacion','$genero','$foto','$informacion')";
-     $resul = mysqli_query($conn, $sql)or triger_error("Query Failed! SQL - Error: ".mysqli_error($conectar),E_USER_ERROR);
+     $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
     header("Location:index.php")
 ?>

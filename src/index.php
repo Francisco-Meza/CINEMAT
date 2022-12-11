@@ -10,40 +10,21 @@
         <?php
             include('nav.html');
             include('Connect.php');
+        $query = "SELECT NOMBRE, PORTADA FROM PELICULA";
+        $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         ?>
         <div class="portadas">
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
+            <?php
+                while($row = mysqli_fetch_assoc($res)){
+            ?>
+                <div class="portadas-banner">
+                <h3><?php echo $row['NOMBRE']; ?></h3>
+                <img src="data:image/jpg;base64,<?php echo base64_encode($row['PORTADA']); ?>" alt="">
                 <button class="button-portada">Detalles</button>
             </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada"href = "InformacionPelicula.php">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Pelicula</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
+            <?php
+                }
+            ?>
         </div>
     </div>
 </body>
