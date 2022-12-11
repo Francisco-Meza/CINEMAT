@@ -26,10 +26,10 @@
         <tr>
             <th>NOMBRE</th>
             <th>IDIOMA</th>
-            <th>DURACION</th>
-            <th>CLASIFICACION</th>
-            <th>GENERO</th>
-            <th>ACCION</th>
+            <th>DURACIÓN</th>
+            <th>CLASIFICACIÓN</th>
+            <th>GÉERO</th>
+            <th>ACCIÓN</th>
         </tr>
         <?php
                 while($row = mysqli_fetch_assoc($res)){
