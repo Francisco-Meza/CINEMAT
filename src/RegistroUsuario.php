@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Registrate</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -11,13 +8,12 @@
         <div class="container">
             <?php
                 include("nav.html");
-                include("Connect.php");
             ?>
             <!-------------------------FORMULARIO--------------------------------------------------->
                 <div class="formulario__h2">
                     <h2>Registro</h2>
                 </div>
-                <form class="formulario" action="" onsubmit="return validar()">
+                <form class="formulario" action="RecibirUsuario.php" method="post" onsubmit="return validar();">
                     <!---------------------------NOMBRE-------------------------------------------------->
                     <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
@@ -75,7 +71,7 @@
                         </div>
                     </div>
                     <!--------------------------- REPETIR CONTRASEÑA-------------------------------------------------->
-                    <div class="formulario__grupo" id="grupo__password2">
+                    <div class="formulario__grupo" id="grupo__password">
                         <label for="password2" class="formulario__label">Repetir Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
                             <input class="formulario__input" type="password" name="password2" id="password2">
@@ -83,6 +79,15 @@
                         </div>
                         <div class="formulario__grupo-error">
                             <p>Ambas contrase&ntilde;a deben ser iguales</p>
+                        </div>
+                    </div>
+                     <!-------------------------FOTO----------------------->
+                     <div class="formulario__grupo"id="grupo__portada">
+                        <label for="foto" class="formulario__label">Foto</label>
+                        <div class="formulario__grupo-input">
+                            <div class="file__botton" >
+                                <input class="file__input-botton" type="file" name="foto" id="portada">
+                            </div>
                         </div>
                     </div>
                     <!--
@@ -97,6 +102,7 @@
                         </div>
                         <button class="button-general" type="submit">Enviar</button>
                     </div>
+
                 </form>  
         </div>
         <script src="js/formulario.js"></script>
