@@ -15,6 +15,7 @@
             ?>
             <div class="centrado">
                     <center>
+                        <br>
                         <img class="bordes"src="assets/usuario.png">  
                     </center>
                     <p class= "centrado-hijo">
