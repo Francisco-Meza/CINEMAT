@@ -11,7 +11,7 @@
     <?php
         include("nav.html");
         include("Connect.php");
-        $query = "SELECT * FROM PELICULA";
+        $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
     ?>
     <br>
@@ -21,7 +21,9 @@
                     <li><a href="RegistroPelicula.php">Pel&iacute;culas</a></li>
                 </ul>
             </nav>
-            <br>
+            <center>
+            <h2>Peliculas</h2>
+            </center>
     <table>
         <tr>
             <th>NOMBRE</th>
@@ -39,16 +41,16 @@
                     <?php echo $row['NOMBRE']; ?>
                 </td>
                 <td>
-                    <?php echo $row['ID_IDIOMA']; ?>
+                    <?php echo $row['idioma']; ?>
                 </td>
                 <td>
                     <?php echo $row['DURACION']; ?>
                 </td>
                 <td>
-                    <?php echo $row['ID_CLASIFICACION']; ?>
+                    <?php echo $row['clasificacion']; ?>
                 </td>
                 <td>
-                    <?php echo $row['ID_GENERERO']; ?>
+                    <?php echo $row['genero']; ?>
                 </td>
                 <td>
                     <button class="button-general" id="<?php echo $row['ID_PELICULA']; ?>" onclick="VerInfo(this.id)">Editar</button>
