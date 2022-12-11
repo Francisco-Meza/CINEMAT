@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Combos</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Contenido principal -->
-        <div class="container">
-                <?php
-                    include('Connect.php');
-                    include('nav.html');
-                    session_start();
-                    if(!isset($_SESSION["correo"])){
-                        header("Location: login.php");
-                    }
-                ?>
-
+<html lang="es">
+<head>
+    <title>CINEMAT</title>
+    <link rel="stylesheet" href="css/InformacionPelicula.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <a href="comboPrueba.html"></a>
+</head>
+<body>
+    <div class="container">
+        <?php
+            include('nav.html');
+            include('Connect.php');
+        $query = "SELECT ID_COMBO,NOMBRE,DESCRIPCION,PRECIO_VENTA,IMAGEN FROM COMBO";
+        $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        ?>
         <div class="portadas">
-            <div class="portadas-banner">
-                <h2>Combo Feliz</h2>
-                <a><button class="button-portada">Detalles</button></a>
-            </div>
-            <div class="portadas-banner">
-                <h2>Combo Pareja</h2>
+            <?php
+                while($row = mysqli_fetch_assoc($res)){
+            ?>
+                <div class="portadas-banner" onclick="verIformacion(this.id)" id="<?php echo $row['ID_COMBO']; ?>">
+                <h3><?php echo $row['NOMBRE']; ?></h3>
+                <img src="data:image/jpg;base64,<?php echo base64_encode($row['IMAGEN']); ?>" alt="">
                 <button class="button-portada">Detalles</button>
             </div>
-            <div class="portadas-banner">
-                <h2>Navidad</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
-            <div class="portadas-banner">
-                <h2>Estudiantes</h2>
-                <button class="button-portada">Detalles</button>
-            </div>
+            <?php
+                }
+            ?>
         </div>
-    </body>
+    </div>
+    <script>
+        function verIformacion(id){
+            window.location.href = "informacionCombo.php?id="+id;
+        }
+    </script>
+</body>
 </html>

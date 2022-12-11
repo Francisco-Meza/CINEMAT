@@ -9,6 +9,7 @@
         <div class="container">
             <?php
                 include("nav.html"); 
+                include("Connect.php");
             ?>
                 <br>
                 <nav>
@@ -18,7 +19,7 @@
                     </ul>
                 </nav>
                 <br>
-                <form class="formulario" action="RecibirCombo.php" method="post" onsubmit="return validar();">
+                <form enctype="multipart/form-data" class="formulario" action="RecibirCombo.php" method="post">
                 <!-------------------------NOMBRE----------------------->
                 <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
@@ -30,26 +31,18 @@
                             <p>El nombre solo debe contener letras</p>
                         </div>
                     </div>
-                    <!-------------------------DETALLES----------------------->
+                    <!-------------------------DESCRIPCION----------------------->
                     <div class="formulario__grupo" id="grupo__detalles">
-                        <label for="nombre" class="formulario__label">Descripci&oacute;n</label>
+                        <label for="descripcion" class="formulario__label">descripcion del combo</label>
                         <div class="formulario__grupo-input">
-                            <textarea type="text" class="formulario__textarea" name="detalles" id="detalles" placeholder="Descripci&oacute;n de la pelicula"></textarea>
+                            <textarea type="text" class="formulario__textarea" name="descripcion" id="descripcion" placeholder="Detalles del combo"></textarea>
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
-                            <p>La descripci&oacute;n solo debe contener letras</p>
+                            <p>Los descripcion del combo solo debe contener letras</p>
                         </div>
                     </div>
-                    <!-------------------------IMAGEN----------------------->
-                    <div class="formulario__grupo" id="grupo__imagen">
-                        <label for="nombre__imagen" class="formulario__label">Imagen</label>
-                        <div class="formulario__grupo-input">
-                            <div class="file__botton" >
-                                <input type="file" name="imagen" id="imagen" placebolder="Imagen">
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-------------------------PRECIO----------------------->
                     <div class="formulario__grupo" id="grupo__precio">
                         <label for="nombre" class="formulario__label">Precio</label>
@@ -61,6 +54,32 @@
                             <p>El precio solo debe contener números</p>
                         </div>
                     </div>
+                    <!-------------------------IMAGEN----------------------->
+                    <div class="formulario__grupo" id="grupo__imagen">
+                        <label for="imagen" class="formulario__label">Imagen</label>
+                        <div class="formulario__grupo-input">
+                            <div class="file__botton" >
+                                <input type="file" name="imagen" id="imagen" placebolder="Imagen">
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $query = "SELECT * FROM combo WHERE ID_COMBO = $id";
+                $res = mysqli_query($conn, $query);
+                $data = mysqli_fetch_assoc($res);
+                ?>
+                <script>
+                     document.getElementById('nombre').value = "<?php echo $data['NOMBRE']; ?>"
+                     document.getElementById('descripcion').value = "<?php echo $data['DESCRIPCION']; ?>"
+                     document.getElementById('precio').value = "<?php echo $data['PRECIO_VENTA']; ?>"
+                </script>
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <?php
+            }
+        ?>
+        <!----------------------------------------------------------------->
                     <div class="formulario__button">
                         <div class="formulario__button-mensaje">
                             <p>Porfavor llena todos los campos correctamente</p>
