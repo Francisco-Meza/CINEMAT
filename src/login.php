@@ -58,7 +58,7 @@
                     
                     <br> 
                     <center>
-                    <c> <a href = "http://google.com">¿Olvidaste la constraseña?</a></c>
+                    <c> <a href = "https://i.pinimg.com/736x/88/fb/47/88fb479a45dd103b5711be2277543b26--memes.jpg">¿Olvidaste la constraseña?</a></c>
                     <br>
                     <br>
                     <center>  
