@@ -8,12 +8,12 @@
 
         <div class="container">
             <?php
-                include("nav.html"); 
+                include("nav.php"); 
                 include("Connect.php");
                 if(!isset($_SESSION["correo"]) || $_SESSION['id'] != 1){
                     header("Location: login.php");
             }
-                include("navAdmin.php");
+                include("navAdmin.html");
             ?>
                 <br>
                 <form enctype="multipart/form-data" class="formulario" action="RecibirCombo.php" method="post">
