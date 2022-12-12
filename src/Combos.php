@@ -10,16 +10,8 @@
         include("Connect.php");
         $query = "SELECT ID_COMBO, NOMBRE, DESCRIPCION,PRECIO_VENTA FROM combo WHERE ID_COMBO=ID_COMBO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        include("navAdmin.html");
     ?>
-            <nav>
-                <ul>
-                    <li><a href="RegistroCombo.php">Registro Combos</a></li>
-                    <li><a href="RegistroPelicula.php">Registro Pel&iacute;culas</a></li>
-                </ul>
-            </nav>
-            <center>
-            <h2>Combos</h2>
-            </center>
     <table>
         <tr>
             <th>NOMBRE</th>

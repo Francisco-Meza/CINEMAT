@@ -2,7 +2,7 @@
     include("Connect.php");
     $nombre=$_POST['nombre'];
     $descripcion=$_POST['descripcion'];
-    $precio=$_POST['precio_venta'];
+    $precio=$_POST['precio'];
 
     if(isset($_POST['id'])){
         $id = $_POST['id'];

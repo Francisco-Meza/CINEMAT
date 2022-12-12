@@ -14,14 +14,8 @@
                 // if(!isset($_SESSION["correo"])){
                 //     header("Location: login.php");
                 // }
+                include("navAdmin.html");
             ?>
-                <nav>
-                    <ul>
-                        <li><a href="RegistroCombo.php">Combos</a></li>
-                        <li><a href="peliculas.php">Pel&iacute;culas</a></li> 
-                        <li><a href="usuarios.php">Usuarios</a></li>                    
-                    </ul>
-                </nav>
                 <br>
                 <form enctype="multipart/form-data" class="formulario" action="RecibirCombo.php" method="post">
                 <!-------------------------NOMBRE----------------------->

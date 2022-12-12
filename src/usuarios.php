@@ -12,14 +12,8 @@
         // "SELECT ID_USUARIO, usuario.NOMBRE, APELLIDOS, usuario.FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO
         // FROM `usuario` where ID_USUARIO = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        include("navAdmin.html");
     ?>
-            <nav>
-                <ul>
-                    <li><a href="RegistroCombo.php">Combos</a></li>
-                    <li><a href="peliculas.php">Pel&iacute;culas</a></li>
-                    <li><a href="usuarios.php">Usuarios</a></li>
-                </ul>
-            </nav>
             <center>
             <h2>Usuarios</h2>
             </center>
