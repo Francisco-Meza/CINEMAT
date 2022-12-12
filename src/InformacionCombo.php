@@ -34,7 +34,6 @@
           <img id="section-main-imagen" class="bordes"  src="data:image/jpg;base64,<?php echo base64_encode($data['IMAGEN']); ?>" alt="imagen de ejemplo"/>
         </div>
       </section>
-      <a href="registroCombo.php?id=<?php echo $id ?>"><button  class="button-general">Modificar</button></a>
     </div>
   </body>
 </html>
