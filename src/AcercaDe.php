@@ -7,7 +7,7 @@
     <body>
         <div class= "container">
             <?php
-                include("nav.html");
+                include("nav.php");
                 // session_start();
                 // if(!isset($_SESSION["correo"])){
                 //     header("Location: login.php");
