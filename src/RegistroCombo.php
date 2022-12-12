@@ -10,10 +10,9 @@
             <?php
                 include("nav.html"); 
                 include("Connect.php");
-                // session_start();
-                // if(!isset($_SESSION["correo"])){
-                //     header("Location: login.php");
-                // }
+                if(!isset($_SESSION["correo"])){
+                    header("Location: login.php");
+            }
                 include("navAdmin.php");
             ?>
                 <br>

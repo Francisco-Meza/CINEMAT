@@ -8,6 +8,9 @@
     <?php
         include("nav.php");
         include("Connect.php");
+        if(!isset($_SESSION["correo"])){
+            header("Location: login.php");
+    }
         $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         include("navAdmin.html")

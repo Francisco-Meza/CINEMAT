@@ -9,6 +9,9 @@
         <div class="container">
             <?php
                 include("nav.php");
+                if(!isset($_SESSION["correo"])){
+                    header("Location: login.php");
+            }
                 include("Connect.php");
                 include("navAdmin.html");
             ?>

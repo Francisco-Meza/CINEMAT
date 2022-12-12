@@ -8,6 +8,9 @@
     <?php
         include("nav.php");
         include("Connect.php");
+        if(!isset($_SESSION["correo"])){
+            header("Location: login.php");
+    }
         $query = "SELECT ID_COMBO, NOMBRE, DESCRIPCION,PRECIO_VENTA FROM combo WHERE ID_COMBO=ID_COMBO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         include("navAdmin.html");

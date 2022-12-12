@@ -10,6 +10,9 @@
                 include("nav.php");
                 include("Connect.php");
                 include("navAdmin.html");
+                if(!isset($_SESSION["correo"])){
+                    header("Location: login.php");
+            }
             ?>
             <!-------------------------FORMULARIO--------------------------------------------------->
                 <div class="formulario__h2">
