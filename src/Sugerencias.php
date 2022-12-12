@@ -10,7 +10,7 @@
     <body>
         <div class= "container">
             <?php
-                include("nav.html");
+                include("nav.php");
             ?>
             <div class="centrado">
                     <p class= "centrado-hijo">

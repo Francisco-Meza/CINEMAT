@@ -16,14 +16,14 @@
         $res=mysqli_query($conn, $consulta)or die('Error al consultar administrador');
         $data = mysqli_fetch_assoc($res);
         if (isset($data)) {
-            echo 'Sesión iniciada';
-            /*session_start();
-            $_SESSION['correo']=$correo;
-            $_SESSION['password']=$password;
-            header("Location: index.php");*/
+            // echo 'Sesión iniciada';
+            session_start();
+            $_SESSION['correo']=$data['CORREO'];
+            $_SESSION['password']=$data['PASSWOR'];
+            header("Location: index.php");
         die;
         }
-        echo 'Sesión no iniciada';
-    //header("Location: login.php?error=1");
+        // echo 'Sesión no iniciada';
+        header("Location: login.php?error=1");
 ?>
 

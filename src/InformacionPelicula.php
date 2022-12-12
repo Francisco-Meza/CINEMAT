@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <?php
-      include('nav.html');
+      include('nav.php');
       include("Connect.php");
       $id = $_GET["id"];
       $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma, PORTADA, INFORMACION FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id and ID_PELICULA = $id";

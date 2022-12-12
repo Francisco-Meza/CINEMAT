@@ -8,11 +8,12 @@
         <li><a href="Sugerencias.php">Sugerencias</a></li>
         <li><a href="AcercaDe.php">Acerca de</a></li>
 
-        <?php if(isset($_SESSION["correo"])) {?>
-        <td href="RegistroPelicula.php">Registrar</td>
+        <?php if(isset($_SESSION['correo'])) {?>
+         <li><a href="peliculas.php">Administraci&oacute;n</a></li>
+         <!-- <li><a href="cerrarSesion.php">Cerrar sesi&oacute;n</a></li> -->
         <?php }?>
 
-        <li><a href="peliculas.php">Administración</a></li>
+       
 
     </ul>
     <a class="buscar">

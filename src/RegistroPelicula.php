@@ -8,7 +8,7 @@
         
         <div class="container">
             <?php
-                include("nav.html");
+                include("nav.php");
                 include("Connect.php");
                 include("navAdmin.html");
             ?>

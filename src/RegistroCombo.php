@@ -14,7 +14,7 @@
                 // if(!isset($_SESSION["correo"])){
                 //     header("Location: login.php");
                 // }
-                include("navAdmin.html");
+                include("navAdmin.php");
             ?>
                 <br>
                 <form enctype="multipart/form-data" class="formulario" action="RecibirCombo.php" method="post">

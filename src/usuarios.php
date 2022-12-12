@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php
-        include("nav.html");
+        include("nav.php");
         include("Connect.php");
         $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");

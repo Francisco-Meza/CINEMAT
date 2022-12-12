@@ -8,8 +8,9 @@
 <body>
     <div class="container">
         <?php
-            include('nav.html');
             include('Connect.php');
+            include('nav.php');
+
         $query = "SELECT ID_PELICULA, NOMBRE, PORTADA FROM PELICULA";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         ?>

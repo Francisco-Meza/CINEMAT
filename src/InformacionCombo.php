@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <?php
-      include('nav.html');
+      include('nav.php');
       include("Connect.php");
       $id = $_GET["id"];
       $query = "SELECT * FROM COMBO WHERE ID_COMBO = $id";

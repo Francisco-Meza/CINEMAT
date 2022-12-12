@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <?php
-            include('nav.html');
+            include('nav.php');
             include('Connect.php');
         $query = "SELECT ID_COMBO,NOMBRE,DESCRIPCION,PRECIO_VENTA,IMAGEN FROM COMBO";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
