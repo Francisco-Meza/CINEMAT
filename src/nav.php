@@ -8,9 +8,11 @@
         <li><a href="Sugerencias.php">Sugerencias</a></li>
         <li><a href="AcercaDe.php">Acerca de</a></li>
 
-        <?php if(isset($_SESSION['correo'])) {?>
+        <?php
+        session_start();
+        if(isset($_SESSION['correo'])) {?>
          <li><a href="peliculas.php">Administraci&oacute;n</a></li>
-         <!-- <li><a href="cerrarSesion.php">Cerrar sesi&oacute;n</a></li> -->
+         <li><a href="cerrarSesion.php">Cerrar sesi&oacute;n</a></li>
         <?php }?>
 
        
