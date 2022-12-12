@@ -13,8 +13,9 @@
     ?>
             <nav>
                 <ul>
-                    <li><a href="RegistroCombo.php">Registro Combos</a></li>
-                    <li><a href="RegistroPelicula.php">Registro Pel&iacute;culas</a></li>
+                    <li><a href="Combos.php">Combos</a></li>
+                    <li><a href="RegistroPelicula.php">Pel&iacute;culas</a></li>
+                    <li><a href="usuarios.php">Usuarios</a></li>
                 </ul>
             </nav>
             <center>

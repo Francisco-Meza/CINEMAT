@@ -8,14 +8,12 @@
     <?php
         include("nav.html");
         include("Connect.php");
-        $query = "SELECT * FROM usuario";
-        // "SELECT ID_USUARIO, usuario.NOMBRE, APELLIDOS, usuario.FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO
-        // FROM `usuario` where ID_USUARIO = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
+        $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
     ?>
             <nav>
                 <ul>
-                    <li><a href="RegistroCombo.php">Combos</a></li>
+                    <li><a href="Combos.php">Combos</a></li>
                     <li><a href="peliculas.php">Pel&iacute;culas</a></li>
                     <li><a href="usuarios.php">Usuarios</a></li>
                 </ul>
@@ -29,7 +27,7 @@
             <th>APELLIDOS</th>
             <th>FECHA NACIMIENTO</th>
             <th>CORREO</th>
-            <th>CONTRASEÑA</th>
+            <!-- <th>CONTRASEÑA</th> -->
             <th>FOTO</th>
         </tr>
         <?php
@@ -48,15 +46,15 @@
                 <td>
                     <?php echo $row['CORREO']; ?>
                 </td>
+                <!-- <td>
+                    <?php echo $row['PASSWOR']; ?>
+                </td> -->
                 <td>
-                    <?php echo $row['CONTRASEÑA']; ?>
+                    <?php echo $row['FOTO']; ?>
                 </td>
                 <td>
-                    <?php echo $row['PERFIL']; ?>
-                </td>
-                <td>
-                    <button class="button-general" id="<?php echo $row['ID_PELICULA']; ?>" onclick="VerInfo(this.id)">Editar</button>
-                    <button class="button-general" id="<?php echo $row['ID_PELICULA']; ?>" onclick="Eliminar(this.id)">Eliminar</button>
+                    <button class="button-general" id="<?php echo $row['ID_USUARIO']; ?>" onclick="VerInfo(this.id)">Editar</button>
+                    <button class="button-general" id="<?php echo $row['ID_USUARIO']; ?>" onclick="Eliminar(this.id)">Eliminar</button>
                 </td>
                 </tr>
             </div>

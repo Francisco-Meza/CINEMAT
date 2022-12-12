@@ -12,7 +12,7 @@
             ?>
                 <nav>
                     <ul>
-                        <li><a href="RegistroCombo.php">Combos</a></li>
+                        <li><a href="RegistroCombo.php">Combo</a></li>
                         <li><a href="peliculas.php">Pel&iacute;culas</a></li>
                         <li><a href="usuarios.php">Usuarios</a></li>
                     </ul>
@@ -22,7 +22,7 @@
                 <div class="formulario__h2">
                     <h2>Registro</h2>
                 </div>
-                <form class="formulario" action="RecibirUsuario.php" method="post" onsubmit="return validar();">
+                <form enctype="multipart/form-data" class="formulario" action="RecibirUsuario.php" method="post" onsubmit="return validar();">
                     <!---------------------------NOMBRE-------------------------------------------------->
                     <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
@@ -50,8 +50,8 @@
                         <label for="fecha_Nac" class="formulario__label">Fecha de nacimiento</label>
                         <div class="formulario__grupo-input">
                             <input type="date" id="fecha_nacimiento" name="fecha_Nac" class="formulario__input"
-                                value="2000-01-01"
-                                min="1950-01-01" max="2020-12-31">
+                                value="1920-01-01"
+                                min="1920-01-01" max="2020-12-31">
                         </div>
                         <div class="formulario__grupo-error">
                             <p>Tienes que ser un adulto</p>
@@ -99,18 +99,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="formulario__button">
+                    <!-- <div class="formulario__button">
                         <div class="formulario__button-mensaje">
                             <p>Porfavor llena todos los campos correctamente</p>
                             <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
                         </div>
                         <button class="button-general" type="submit">Enviar</button>
-                    </div>
+                    </div> -->
 
                     <?php
                         if(isset($_GET['id'])){
                             $id = $_GET['id'];
-                            $query = "SELECT * FROM USUARIO WHERE ID_USUARIO = $id";
+                            $query = "SELECT * FROM usuario WHERE ID_USUARIO = $id";
                             $res = mysqli_query($conn, $query);
                             $data = mysqli_fetch_assoc($res);
                     ?>
@@ -120,7 +120,7 @@
                      document.getElementById('fecha_nacimiento').value = "<?php echo $data['FECHA_NACIMIENTO']; ?>"
                      document.getElementById('correo').value = "<?php echo $data['CORREO']; ?>"
                      document.getElementById('password').value = "<?php echo $data['PASSWOR']; ?>"
-                     document.getElementById('foto').value = "<?php echo $data['INFORMACION']; ?>"
+
                 </script>
                 <input type="hidden" name="id" value="<?php echo $id ?>">
                 <?php
