@@ -12,13 +12,6 @@
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         include("navAdmin.html");
     ?>
-            <!-- <nav>
-                <ul>
-                    <li><a href="Combos.php">Combos</a></li>
-                    <li><a href="RegistroPelicula.php">Pel&iacute;culas</a></li>
-                    <li><a href="usuarios.php">Usuarios</a></li>
-                </ul>
-            </nav> -->
             <center>
             <h2>Combos</h2>
             </center>
