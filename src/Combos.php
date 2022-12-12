@@ -53,7 +53,7 @@
         function Eliminar(id){
             var res = confirm("¿Seguro que desea eliminar?");
             if(res){
-                window.location.href = "EliminarCombo.php?id="+id;
+                window.location.href = "EiminarCombo.php?id="+id;
             }
         }
         function Nuevo(id){
