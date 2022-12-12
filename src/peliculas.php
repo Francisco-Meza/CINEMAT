@@ -15,6 +15,9 @@
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
         include("navAdmin.html")
     ?>
+            <center>
+                <h2>Pel&iacute;cula</h2>
+            </center>
     <table>
         <tr>
             <th>NOMBRE</th>
