@@ -15,6 +15,7 @@
                     <ul>
                         <li><a href="RegistroCombo.php">Combos</a></li>
                         <li><a href="peliculas.php">Pel&iacute;culas</a></li>
+                        <li><a href="usuarios.php">Usuarios</a></li>
                     </ul>
                 </nav>
                 <br>
@@ -117,12 +118,12 @@
                     </div>
                     <!-------------------------------ID-->
                     <?php
-            if(isset($_GET['id'])){
-                $id = $_GET['id'];
-                $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
-                $res = mysqli_query($conn, $query);
-                $data = mysqli_fetch_assoc($res);
-                ?>
+                        if(isset($_GET['id'])){
+                            $id = $_GET['id'];
+                            $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
+                            $res = mysqli_query($conn, $query);
+                            $data = mysqli_fetch_assoc($res);
+                    ?>
                 <script>
                      document.getElementById('nombre').value = "<?php echo $data['NOMBRE']; ?>"
                      document.getElementById('idioma').value = "<?php echo $data['ID_IDIOMA']; ?>"

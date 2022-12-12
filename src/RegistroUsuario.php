@@ -14,6 +14,7 @@
                     <ul>
                         <li><a href="RegistroCombo.php">Combos</a></li>
                         <li><a href="peliculas.php">Pel&iacute;culas</a></li>
+                        <li><a href="usuarios.php">Usuarios</a></li>
                     </ul>
                 </nav>
                 <br>
@@ -37,7 +38,7 @@
                     <div class="formulario__grupo" id="grupo__apellido">
                         <label for="apellido" class="formulario__label">Apellidos</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="text" name="apellido" id="apellido">
+                            <input class="formulario__input" type="text" name="apellido" id="apellidos">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -48,7 +49,7 @@
                     <div class="formulario__grupo" id="grupo__fecha_Nac">
                         <label for="fecha_Nac" class="formulario__label">Fecha de nacimiento</label>
                         <div class="formulario__grupo-input">
-                            <input type="date" id="fecha_Nac" name="fecha_Nac" class="formulario__input"
+                            <input type="date" id="fecha_nacimiento" name="fecha_Nac" class="formulario__input"
                                 value="2000-01-01"
                                 min="1950-01-01" max="2020-12-31">
                         </div>
@@ -71,7 +72,7 @@
                     <div class="formulario__grupo" id="grupo__password">
                         <label for="password" class="formulario__label">Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="password" name="password" id="password">
+                            <input class="formulario__input" type="password" name="password" id="passwor">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -82,7 +83,7 @@
                     <div class="formulario__grupo" id="grupo__password">
                         <label for="password2" class="formulario__label">Repetir Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="password" name="password2" id="password2">
+                            <input class="formulario__input" type="password" name="password2" id="passwor2">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -94,7 +95,7 @@
                         <label for="foto" class="formulario__label">Foto</label>
                         <div class="formulario__grupo-input">
                             <div class="file__botton" >
-                                <input class="file__input-botton" type="file" name="foto" id="portada">
+                                <input class="file__input-botton" type="file" name="foto" id="foto">
                             </div>
                         </div>
                     </div>
@@ -104,6 +105,34 @@
                             <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
                         </div>
                         <button class="button-general" type="submit">Enviar</button>
+                    </div>
+
+                    <?php
+                        if(isset($_GET['id'])){
+                            $id = $_GET['id'];
+                            $query = "SELECT * FROM USUARIO WHERE ID_USUARIO = $id";
+                            $res = mysqli_query($conn, $query);
+                            $data = mysqli_fetch_assoc($res);
+                    ?>
+                <script>
+                     document.getElementById('nombre').value = "<?php echo $data['NOMBRE']; ?>"
+                     document.getElementById('apellidos').value = "<?php echo $data['APELLIDOS']; ?>"
+                     document.getElementById('fecha_nacimiento').value = "<?php echo $data['FECHA_NACIMIENTO']; ?>"
+                     document.getElementById('correo').value = "<?php echo $data['CORREO']; ?>"
+                     document.getElementById('passwor').value = "<?php echo $data['PASSWOR']; ?>"
+                     document.getElementById('foto').value = "<?php echo $data['INFORMACION']; ?>"
+                </script>
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <?php
+            }
+        ?>
+                    <!----------------------------------------------------------------->
+                    <div class="formulario__button">
+                        <div class="formulario__button-mensaje">
+                            <p>Porfavor llena todos los campos correctamente</p>
+                            <i class="formulario__warning fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <button class="button-general"  type="submit">Enviar</button>
                     </div>
 
                 </form>  

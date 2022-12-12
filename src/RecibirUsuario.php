@@ -31,11 +31,9 @@
             return $foto_recovertida;
         }
     }
-
-
-
     $nombre=$_POST['nombre'];
     $apellidos=$_POST['apellidos'];
+    $fecha_nacimiento=$_POST["fecha_nacimiento"];
     $correo=$_POST['correo'];
     $password=$_POST['password'];
     $foto = "";

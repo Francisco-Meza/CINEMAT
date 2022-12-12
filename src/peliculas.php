@@ -15,6 +15,7 @@
                 <ul>
                     <li><a href="RegistroCombo.php">Combos</a></li>
                     <li><a href="peliculas.php">Pel&iacute;culas</a></li>
+                    <li><a href="usuarios.php">Usuarios</a></li>
                 </ul>
             </nav>
             <center>
