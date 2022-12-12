@@ -1,23 +1,27 @@
 <?php
-
     include("Connect.php");
+    $nombre=$_POST['nombre'];
+    $descripcion=$_POST['descripcion'];
+    $precio=$_POST['precio_venta'];
+
     if(isset($_POST['id'])){
         $id = $_POST['id'];
-        echo "Si hay id" . $id;
-        if(isset($_FILES['imagen']['name']))
+        echo "Si hay id" . $_FILES['imagen']['name'];
+        $sql = "UPDATE combo SET NOMBRE ='$nombre',DESCRIPCION='$descripcion',PRECIO_VENTA='$precio'";
+        if($_FILES['imagen']['name']!="")
         {
             $imagen = ConvertirImagen();
+            $sql = $sql.", imagen = '$imagen'";
         }
+        $sql = $sql . "WHERE ID_COMBO = $id";
+        $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
     }else{
-        $nombre=$_POST['nombre'];
-        $descripcion=$_POST['descripcion'];
-        $precio=$_POST['precio'];
         $imagen=ConvertirImagen();
         $sql="INSERT INTO combo(NOMBRE,DESCRIPCION, PRECIO_VENTA,IMAGEN) 
         VALUES ('$nombre','$descripcion','$precio','$imagen')";
          $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));
-         header("Location:comboPrueba.php");
     }
+    header("Location:comboPrueba.php");
         function ConvertirImagen(){
             if(isset($_FILES['imagen']['name']))
             {

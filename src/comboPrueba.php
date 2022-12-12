@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <title>CINEMAT</title>
-    <link rel="stylesheet" href="css/InformacionPelicula.css" />
     <link rel="stylesheet" href="css/style.css" />
     <a href="comboPrueba.html"></a>
 </head>
