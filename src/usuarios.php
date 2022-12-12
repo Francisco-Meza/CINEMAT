@@ -10,14 +10,8 @@
         include("Connect.php");
         $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        include("navAdmin.html");
     ?>
-            <nav>
-                <ul>
-                    <li><a href="Combos.php">Combos</a></li>
-                    <li><a href="peliculas.php">Pel&iacute;culas</a></li>
-                    <li><a href="usuarios.php">Usuarios</a></li>
-                </ul>
-            </nav>
             <center>
             <h2>Usuarios</h2>
             </center>

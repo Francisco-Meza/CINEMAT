@@ -10,6 +10,7 @@
         include("Connect.php");
         $query = "SELECT ID_COMBO, NOMBRE, DESCRIPCION,PRECIO_VENTA FROM combo WHERE ID_COMBO=ID_COMBO order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        include("navAdmin.html");
     ?>
             <nav>
                 <ul>
@@ -62,7 +63,7 @@
         function Eliminar(id){
             var res = confirm("¿Seguro que desea eliminar?");
             if(res){
-                window.location.href = "EliminarCombo.php?id="+id;
+                window.location.href = "EiminarCombo.php?id="+id;
             }
         }
         function Nuevo(id){

@@ -10,17 +10,8 @@
         include("Connect.php");
         $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+        include("navAdmin.html")
     ?>
-            <nav>
-                <ul>
-                    <li><a href="RegistroCombo.php">Combos</a></li>
-                    <li><a href="peliculas.php">Pel&iacute;culas</a></li>
-                    <li><a href="usuarios.php">Usuarios</a></li>
-                </ul>
-            </nav>
-            <center>
-            <h2>Peliculas</h2>
-            </center>
     <table>
         <tr>
             <th>NOMBRE</th>

@@ -10,14 +10,8 @@
             <?php
                 include("nav.html");
                 include("Connect.php");
+                include("navAdmin.html");
             ?>
-                <nav>
-                    <ul>
-                        <li><a href="Combos.php">Combos</a></li>
-                        <li><a href="peliculas.php">Pel&iacute;culas</a></li>
-                        <li><a href="usuarios.php">Usuarios</a></li>
-                    </ul>
-                </nav>
                 <br>
                 <form enctype="multipart/form-data" class="formulario" action="recibirPelicula.php" method="post">
                     <dic class="formulario__h2"> 
