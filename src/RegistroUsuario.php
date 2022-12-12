@@ -72,7 +72,7 @@
                     <div class="formulario__grupo" id="grupo__password">
                         <label for="password" class="formulario__label">Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="password" name="password" id="passwor">
+                            <input class="formulario__input" type="password" name="password" id="password">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -83,7 +83,7 @@
                     <div class="formulario__grupo" id="grupo__password">
                         <label for="password2" class="formulario__label">Repetir Contrase&ntilde;a</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="password" name="password2" id="passwor2">
+                            <input class="formulario__input" type="password" name="password2" id="password2">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -119,7 +119,7 @@
                      document.getElementById('apellidos').value = "<?php echo $data['APELLIDOS']; ?>"
                      document.getElementById('fecha_nacimiento').value = "<?php echo $data['FECHA_NACIMIENTO']; ?>"
                      document.getElementById('correo').value = "<?php echo $data['CORREO']; ?>"
-                     document.getElementById('passwor').value = "<?php echo $data['PASSWOR']; ?>"
+                     document.getElementById('password').value = "<?php echo $data['PASSWOR']; ?>"
                      document.getElementById('foto').value = "<?php echo $data['INFORMACION']; ?>"
                 </script>
                 <input type="hidden" name="id" value="<?php echo $id ?>">
