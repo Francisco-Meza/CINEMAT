@@ -9,9 +9,9 @@
             <?php
                 include("nav.php");
                 include("Connect.php");
-            ?>
-
-            <div class="formulario__h2">
+                if(!isset($_SESSION["correo"])){
+              ?> 
+                    <div class="formulario__h2">
                     <h2>Login</h2>
             </div>
                 <br>
@@ -72,6 +72,12 @@
                     <br>
                 </form>  
         </div>
+              <?php
+                }
+            ?>
+            <!----------------PERFIL USUARIO----------------------------->
+            
+            
         <script src="js/formulario.js"></script>
     </body>
 </html>
