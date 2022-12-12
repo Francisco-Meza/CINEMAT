@@ -31,7 +31,7 @@
                     <div class="formulario__grupo" id="grupo__apellido">
                         <label for="apellido" class="formulario__label">Apellidos</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="text" name="apellido" id="apellidos">
+                            <input class="formulario__input" type="text" name="apellidos" id="apellidos">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
@@ -42,7 +42,7 @@
                     <div class="formulario__grupo" id="grupo__fecha_Nac">
                         <label for="fecha_Nac" class="formulario__label">Fecha de nacimiento</label>
                         <div class="formulario__grupo-input">
-                            <input type="date" id="fecha_nacimiento" name="fecha_Nac" class="formulario__input"
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="formulario__input"
                                 value="1920-01-01"
                                 min="1920-01-01" max="2020-12-31">
                         </div>

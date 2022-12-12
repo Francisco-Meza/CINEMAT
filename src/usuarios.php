@@ -21,8 +21,9 @@
             <th>APELLIDOS</th>
             <th>FECHA NACIMIENTO</th>
             <th>CORREO</th>
+            <th>ACCIÓN</th>
             <!-- <th>CONTRASEÑA</th> -->
-            <th>FOTO</th>
+            <!-- <th>FOTO</th> -->
         </tr>
         <?php
                 while($row = mysqli_fetch_assoc($res)){
@@ -43,9 +44,9 @@
                 <!-- <td>
                     <?php echo $row['PASSWOR']; ?>
                 </td> -->
-                <td>
+                <!-- <td>
                     <?php echo $row['FOTO']; ?>
-                </td>
+                </td> -->
                 <td>
                     <button class="button-general" id="<?php echo $row['ID_USUARIO']; ?>" onclick="VerInfo(this.id)">Editar</button>
                     <button class="button-general" id="<?php echo $row['ID_USUARIO']; ?>" onclick="Eliminar(this.id)">Eliminar</button>
