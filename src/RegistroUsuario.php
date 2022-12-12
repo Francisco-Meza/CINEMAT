@@ -9,9 +9,8 @@
             <?php
                 include("nav.php");
                 include("Connect.php");
-                include("navAdmin.html");
-                if(!isset($_SESSION["correo"])){
-                    header("Location: login.php");
+                if(isset($_SESSION["correo"])){
+                    include("navAdmin.html");
             }
             ?>
             <!-------------------------FORMULARIO--------------------------------------------------->
