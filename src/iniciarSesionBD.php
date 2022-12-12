@@ -1,18 +1,16 @@
 <?php
-    /*if(isset($_POST["correo"])){
+    if(isset($_POST["correo"])){
         $correo=addslashes($_POST["correo"]);
     }
     else{
         $correo="";        
     }
     if(isset($_POST["password"])){
-        $password=addslashes($_POST["password"]);
+        $pass=addslashes($_POST["password"]);
     }
     else{
-        $password="";
-    }*/
-    $correo = "balazo@gmail.com";
-    $pass = "1234";
+        $pass="";
+    }
     include('Connect.php');
         $consulta="SELECT * FROM usuario WHERE CORREO='$correo' AND PASSWOR='$pass'";
         $res=mysqli_query($conn, $consulta)or die('Error al consultar administrador');
