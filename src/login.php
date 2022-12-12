@@ -15,7 +15,7 @@
                     <h2>Login</h2>
             </div>
                 <br>
-                <form id="formularioLogin" action="iniciarSesionBD.php" method="post" onsubmit="return validar();">
+                <form id="formularioLogin" action="iniciarSesionBD.php" method="POST" onsubmit="return validar();">
                      <!---------------------------CORREO-------------------------------------------------->
                      <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo electronico</label>
