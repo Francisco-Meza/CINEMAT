@@ -10,7 +10,7 @@
 
         <?php if(isset($_SESSION['correo'])) {?>
          <li><a href="peliculas.php">Administraci&oacute;n</a></li>
-         <!-- <li><a href="cerrarSesion.php">Cerrar sesi&oacute;n</a></li> -->
+         <li><a href="cerrarSesion.php">Cerrar sesi&oacute;n</a></li>
         <?php }?>
 
        
