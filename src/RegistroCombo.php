@@ -10,7 +10,7 @@
             <?php
                 include("nav.html"); 
                 include("Connect.php");
-                if(!isset($_SESSION["correo"])){
+                if(!isset($_SESSION["correo"]) || $_SESSION['id'] != 1){
                     header("Location: login.php");
             }
                 include("navAdmin.php");

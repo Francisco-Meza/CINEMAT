@@ -9,7 +9,7 @@
             <?php
                 include("nav.php");
                 include("Connect.php");
-                if(isset($_SESSION["correo"])){
+                if(isset($_SESSION["correo"]) && $_SESSION['id'] == 1){
                     include("navAdmin.html");
             }
             ?>

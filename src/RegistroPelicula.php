@@ -9,7 +9,7 @@
         <div class="container">
             <?php
                 include("nav.php");
-                if(!isset($_SESSION["correo"])){
+                if(!isset($_SESSION["correo"]) || $_SESSION['id'] != 1){
                     header("Location: login.php");
             }
                 include("Connect.php");

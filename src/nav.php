@@ -10,7 +10,7 @@
 
         <?php
         session_start();
-        if(isset($_SESSION['id']) && $_SESSION['id'] = 1) {?>
+        if(isset($_SESSION['id']) && $_SESSION['id'] == 1) {?>
          <li><a href="peliculas.php">Administraci&oacute;n</a></li>
         <?php }?>
 

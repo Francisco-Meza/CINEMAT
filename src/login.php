@@ -73,8 +73,8 @@
                 </form>  
         </div>
               <?php
-                }
-            ?>
+            } else {
+              ?>
             <!----------------PERFIL USUARIO----------------------------->
             <!---------------------BOTON------------------------->
             <br>
@@ -82,5 +82,8 @@
                 <a href="cerrarSesion.php"><button class="button-general">Cerrar sesion</button></a>
             </center>
         <script src="js/formulario.js"></script>
+        <?php
+            }
+        ?>
     </body>
 </html>
