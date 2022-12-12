@@ -1,10 +1,3 @@
-<?php
-                if(isset($_GET['error'])){
-                    if($_GET['error']=='1'){
-                        echo "<b>Error en usuario o contraseña.</b>";
-                    }
-                }
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,7 +15,7 @@
                     <h2>Login</h2>
             </div>
                 <br>
-                <form id="formularioLogin" action="" onsubmit="return validar();">
+                <form id="formularioLogin" action="iniciarSesionBD.php" method="post" onsubmit="return validar();">
                      <!---------------------------CORREO-------------------------------------------------->
                      <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo electronico</label>
@@ -45,6 +38,15 @@
                             <p>La contrase&ntilde;a debe contener al menos una mayuscula, minuscula y un numero</p>
                         </div>
                     </div>
+                    <center>
+                        <?php
+                            if(isset($_GET['error'])){
+                                if($_GET['error']=='1'){
+                                    echo "<b>Error en usuario o contraseña.</b>";
+                                    }
+                                }
+                        ?>
+                    </center>
                     <!---------------------BOTON------------------------->
                     <div class="formulario__button">
                         <div class="formulario__button-mensaje">

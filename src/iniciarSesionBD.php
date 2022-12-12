@@ -12,7 +12,7 @@
         $password="";
     }
     include('Connect.php');
-        $consulta="select * from CLIENTE where correo='$correo' and password='$password'";
+        $consulta="select * from usuario where CORREO='$correo' and PASSWOR='$password'";
         $resultado=mysqli_query($conn, $consulta)or die('Error al consultar administrador');
         $i=1;
         while($fila=mysqli_fetch_array($resultado)){
@@ -25,3 +25,4 @@
         }
     header("Location: login.php?error=1");
 ?>
+
