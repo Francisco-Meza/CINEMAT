@@ -8,7 +8,7 @@
     <?php
         include("nav.php");
         include("Connect.php");
-        if(!isset($_SESSION["correo"])){
+        if(!isset($_SESSION["correo"]) || $_SESSION['id'] != 1){
             header("Location: login.php");
         }
         $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO order by NOMBRE";
