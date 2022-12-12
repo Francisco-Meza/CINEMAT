@@ -18,18 +18,10 @@
                         <img class="bordes"src="assets/usuario.png">  
                     </center>
                     <p class= "centrado-hijo">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <center>
-                        <button class="button-general">Contacto</button>
-                    </center>
-                        
+                        Cinemat es una pequeña empresa dedicada al entretenimiento, ofrece paquetes a muy buen precio y
+                        ofertas de grandes estrenos, el objetivo de Cinemat es brindarle un buen servicio a los clientes.
+                        Cinemat se encuentra ubicada en la calle Justo barajas #82 sur en la colonia centro del municipio de Ixtlan del Río, del estado de Nayarit,México.
+                    </p>                        
             </div>
         </div>
     </body>
