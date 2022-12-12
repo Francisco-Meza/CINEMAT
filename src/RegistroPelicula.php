@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registro de una pelicula</title>
+        <title>Registro de una película</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body> 
@@ -13,8 +13,8 @@
             ?>
                 <nav>
                     <ul>
-                        <li><a href="RegistroCombo.php">Registro Combo</a></li>
-                        <li><a href="RegistroPelicula.php">Registro Pel&iacute;cula</a></li>
+                        <li><a href="RegistroCombo.php">Combos</a></li>
+                        <li><a href="peliculas.php">Pel&iacute;culas</a></li>
                     </ul>
                 </nav>
                 <br>

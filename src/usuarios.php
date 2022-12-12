@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <title>Películas</title>
+    <title>Usuarios</title>
 </head>
 <body>
     <?php
         include("nav.html");
         include("Connect.php");
-        $query = "SELECT ID_PELICULA, pelicula.NOMBRE, DURACION, clasificacion.nombre as clasificacion,genero.nombre as genero, idioma.nombre as idioma FROM `pelicula`, clasificacion, idioma, genero where ID_CLASIFICACION = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
+        $query = "SELECT * FROM usuario";
+        // "SELECT ID_USUARIO, usuario.NOMBRE, APELLIDOS, usuario.FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO
+        // FROM `usuario` where ID_USUARIO = clasificacion.id and ID_IDIOMA = idioma.id and ID_GENERERO = genero.id order by NOMBRE";
         $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
     ?>
             <nav>
@@ -18,16 +20,16 @@
                 </ul>
             </nav>
             <center>
-            <h2>Peliculas</h2>
+            <h2>Usuarios</h2>
             </center>
     <table>
         <tr>
             <th>NOMBRE</th>
-            <th>IDIOMA</th>
-            <th>DURACIÓN</th>
-            <th>CLASIFICACIÓN</th>
-            <th>GÉNERO</th>
-            <th>ACCIÓN</th>
+            <th>APELLIDOS</th>
+            <th>FECHA NACIMIENTO</th>
+            <th>CORREO</th>
+            <th>CONTRASEÑA</th>
+            <th>FOTO</th>
         </tr>
         <?php
                 while($row = mysqli_fetch_assoc($res)){
@@ -37,16 +39,19 @@
                     <?php echo $row['NOMBRE']; ?>
                 </td>
                 <td>
-                    <?php echo $row['idioma']; ?>
+                    <?php echo $row['APELLIDOS']; ?>
                 </td>
                 <td>
-                    <?php echo $row['DURACION']; ?>
+                    <?php echo $row['FECHA_NACIMIENTO']; ?>
                 </td>
                 <td>
-                    <?php echo $row['clasificacion']; ?>
+                    <?php echo $row['CORREO']; ?>
                 </td>
                 <td>
-                    <?php echo $row['genero']; ?>
+                    <?php echo $row['CONTRASEÑA']; ?>
+                </td>
+                <td>
+                    <?php echo $row['PERFIL']; ?>
                 </td>
                 <td>
                     <button class="button-general" id="<?php echo $row['ID_PELICULA']; ?>" onclick="VerInfo(this.id)">Editar</button>
@@ -64,16 +69,16 @@
     </center>
     <script>
         function VerInfo(id){
-            window.location.href = "RegistroPelicula.php?id="+id;
+            window.location.href = "RegistroUsuario.php?id="+id;
         }
         function Eliminar(id){
             var res = confirm("¿Seguro que desea eliminar?");
             if(res){
-                window.location.href = "EliminarPelicula.php?id="+id;
+                window.location.href = "EliminarUsuario.php?id="+id;
             }
         }
         function Nuevo(id){
-            window.location.href = "RegistroPelicula.php";
+            window.location.href = "RegistroUsuario.php";
         }
     </script>
 </body>

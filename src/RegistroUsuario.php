@@ -8,7 +8,15 @@
         <div class="container">
             <?php
                 include("nav.html");
+                include("Connect.php");
             ?>
+                <nav>
+                    <ul>
+                        <li><a href="RegistroCombo.php">Combos</a></li>
+                        <li><a href="peliculas.php">Pel&iacute;culas</a></li>
+                    </ul>
+                </nav>
+                <br>
             <!-------------------------FORMULARIO--------------------------------------------------->
                 <div class="formulario__h2">
                     <h2>Registro</h2>
@@ -18,7 +26,7 @@
                     <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
-                            <input class="formulario__input" type="text" name="nombre" id="nombre">
+                            <input class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Nombre del usuario">
                             <i class="formulario__error fa-sharp fa-solid fa-circle-xmark"></i>
                         </div>
                         <div class="formulario__grupo-error">
