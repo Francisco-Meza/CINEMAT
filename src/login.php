@@ -76,8 +76,11 @@
                 }
             ?>
             <!----------------PERFIL USUARIO----------------------------->
-            
-            
+            <!---------------------BOTON------------------------->
+            <br>
+            <center>
+                <a href="cerrarSesion.php"><button class="button-general">Cerrar sesion</button></a>
+            </center>
         <script src="js/formulario.js"></script>
     </body>
 </html>
