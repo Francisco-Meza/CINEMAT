@@ -20,6 +20,7 @@
             session_start();
             $_SESSION['correo']=$data['CORREO'];
             $_SESSION['password']=$data['PASSWOR'];
+            $_SESSION['id']=$data['ID_USUARIO'];
             header("Location: index.php");
         die;
         }
