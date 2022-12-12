@@ -18,12 +18,7 @@
        
 
     </ul>
-    <a class="buscar">
-        <input type="text" placeholder="Buscar" required>
-        <!-- <div class="btn"> -->
-            <i class="fas fa-search icon"></i>
-        <!-- </div> -->
-    </a>
+    
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="login.php"><i class="fa-solid fa-circle-user"></i></a>
 </nav>
