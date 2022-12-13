@@ -13,13 +13,26 @@
     if (!isset($_SESSION["correo"]) || $_SESSION['id'] != 1) {
         header("Location: login.php");
     }
-    $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO order by NOMBRE";
-    $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
     include("navAdmin.html");
+    if(isset($_GET['buscar'])){
+        $buscar = $_GET['buscar'];
+        $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario WHERE ID_USUARIO=ID_USUARIO
+         AND NOMBRE LIKE '%$buscar%' OR APELLIDOS LIKE '%$buscar%' OR CORREO LIKE '%$buscar%' order by NOMBRE";
+        $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+    }else{
+        $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, FECHA_NACIMIENTO, CORREO, PASSWOR, FOTO FROM usuario order by NOMBRE";
+        $res = mysqli_query($conn, $query) or die("No se pudo realizar la consulta");
+    }
     ?>
     <center>
         <h2>Usuarios</h2>
     </center>
+    <div class="busqueda">
+        <form class="formulario" action="usuarios.php" method="GET">
+            <input name="buscar" class="formulario__input" type="text" placeholder="Buscar">
+            <button type="submit" class="button-general">Buscar</button>
+        </form>
+    </div>
     <table>
         <tr>
             <th>NOMBRE</th>
