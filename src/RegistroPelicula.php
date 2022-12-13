@@ -120,6 +120,7 @@
                             $query = "SELECT * FROM PELICULA WHERE ID_PELICULA = $id";
                             $res = mysqli_query($conn, $query);
                             $data = mysqli_fetch_assoc($res);
+                            echo $data['NOMBRE']; 
                     ?>
                 <script>
                      document.getElementById('nombre').value = "<?php echo $data['NOMBRE']; ?>"

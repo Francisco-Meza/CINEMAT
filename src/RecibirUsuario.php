@@ -24,7 +24,7 @@
     }
     header("Location:usuarios.php");
         function ConvertirImagen(){
-            if(isset($_FILES['foto']['name']))
+            if(isset($_FILES['foto']['name']) && $_FILES['foto']['name'] != "")
             {
                 $archivo_temporal=$_FILES['foto']['tmp_name'];
                 $f1 = fopen($archivo_temporal, "rb");
@@ -34,6 +34,8 @@
                 
                 $imagen_recovertida=addslashes($imagen_recovertida);
                 return $imagen_recovertida;
+            }else{
+                return "";
             }
         }
 ?>
