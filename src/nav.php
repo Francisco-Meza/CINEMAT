@@ -7,17 +7,14 @@
         <li><a href="comboPrueba.php">Combos</a></li>
         <li><a href="Sugerencias.php">Sugerencias</a></li>
         <li><a href="AcercaDe.php">Acerca de</a></li>
-
         <?php
         session_start();
-        if(isset($_SESSION['id']) && $_SESSION['id'] == 1) {?>
-         <li><a href="peliculas.php">Administraci&oacute;n</a></li>
-        <?php }?>
-
-       
-
+        if (isset($_SESSION['id']) && $_SESSION['id'] == 1) { ?>
+        <li><a href="peliculas.php">Administraci&oacute;n</a></li>
+        <?php } ?>
     </ul>
-    
+    <div class="iconos">
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="login.php"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
 </nav>

@@ -26,7 +26,7 @@ nav ul li{
 }
 nav ul{
     margin: auto 0;
-    margin-right: 10%;
+    /*margin-right: 10%;*/
 }
 nav ul li:hover{
     cursor: pointer;
@@ -43,6 +43,14 @@ nav a{
 nav a:hover{
     opacity: 0.4;
     cursor: pointer;
+}
+.iconos{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+.iconos i{
+    margin: 0 10px;
 }
 /*------------------------ CUERPO DEL CONTENEDOR PRINCIPAL ------------------------*/
 .container{
