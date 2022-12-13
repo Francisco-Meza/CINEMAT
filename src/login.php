@@ -3,6 +3,7 @@
     <head>
         <title>Login</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/PerfilUsuario.css">
     </head>
     <body>
         <div class="container">
@@ -84,6 +85,7 @@
         <script src="js/formulario.js"></script>
         <?php
             }
-        ?>
+        ?> 
+        </div>
     </body>
 </html>
