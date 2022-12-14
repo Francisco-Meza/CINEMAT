@@ -87,5 +87,21 @@
             }
         ?> 
         </div>
+        <?php
+            $id=$_SESSION['id'];        
+            $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, CORREO, FOTO FROM `usuario` where ID_USUARIO = $id";
+            $res = mysqli_query($conn, $query) or die("No se pudo ejecutar la consulta");
+            $data = mysqli_fetch_assoc($res);
+        ?>
+        <section>
+              <h1><?php echo $data['NOMBRE']; ?></h1>
+            <br>
+            <center>
+                <img id="section-main-perfil" src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo"/>
+                <br>
+
+                <button class = "button-usuario">Comprar</button>
+            </center>
+      </section>
     </body>
 </html>
