@@ -1,12 +1,13 @@
+/*---------FONDO-----------------*/
 .info-usuario{
     display: flex;
     background-color: #541fbf;
-    color: white;
     font-family: 'Arial Narrow Bold';
     padding-right: 30%;
     margin:auto;
     width: 50%;
 }
+/*------------BOTONES---------------*/
 .button-comprar{
     background-color: #541fbf;
     border: none;
@@ -17,10 +18,38 @@
     position:relative;
     left:150px;
 }
-#section-main-perfil{
+.button-editar{
+    background-color: #541fbf;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    position:relative;
+    left:150px;
+}
+/*------------INFO USUARIO--------------*/
+.nombre-usuario{
+    color:white;
+    text-align: center;
+    padding-right: 40%;
+    border-radius: 4px;
+
+}
+#section-datos{
+    display: flex;
+    background: #8148F4;
+    color: white;
+}
+#section-datos-detalles{
+    width: 40%;
+    height: 50%;
+    margin-top: 2%;
+}
+#section-datos-imagen{
     border: none;
     position: relative;
-    width: 10%;
+    width: 20%;
     height: 30%;
-    left:100px;
+    left:150px;
 }

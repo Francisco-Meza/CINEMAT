@@ -86,6 +86,7 @@
                 ?> 
         </div>
                 <br>
+                <!----------------------DATOS USUARIO---------------->
                 <?php
                     $id=$_SESSION['id'];        
                     $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, CORREO, FOTO FROM `usuario` where ID_USUARIO = $id";
@@ -93,18 +94,25 @@
                     $data = mysqli_fetch_assoc($res);
                 ?>
                 <section>
+                    <div id='section-datos'>
+                        <div id='section-datos-detalles'>
+                            <div class='nombre-usuario'> BIENVENIDO: <?php echo $data['NOMBRE'];?></div>
+                                <p>
+                                    <a href="login.php"><img id="section-datos-imagen" src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo"/></a>
+                                </p>
+                                <div>
 
-                        <h1 class="info-usuario">
-                            <?php 
-                                echo $data['NOMBRE']; 
-                            ?>
-                        </h1>
-                        <!-- Lo que queria hacer era mandar dando clicl en la foto a cambiar los datos -->
-                        <a href="login.php"><img id="section-main-perfil" src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo"/></a>
-                        <br> 
-                        <br>
-                        <a href='comboPrueba.php'><button class = "button-comprar">Comprar</button></a>
-                        
+                                </div>
+                                    <a href='comboPrueba.php'><button class = "button-comprar">Comprar</button></a>
+                                    <a href='comboPrueba.php'><button class = "button-editar">Editar</button></a>
+                                    <center>
+                                        Pel&iacute;culas agregadas
+                                        <br>
+                                        <br>
+                                        Combos a&ntilde;adidos
+                                    </center>
+                        </div>
+                    </div>
                 </section>
             <script src="js/formulario.js"></script>
     </body>
