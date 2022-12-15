@@ -388,3 +388,37 @@ textarea{
     tr:hover{
         background-color: #8148F4;
     }
+/*--------------------------LOGIN-------------------------------*/
+.infoUsuario{
+    text-align: center;
+}
+.usuario-principal{
+    display: flex;
+    margin: 5% 10% 2% 10%;
+    border: rgb(201, 201, 201) solid 1px;
+}
+.usuario-principal img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.usuario-principal h1{
+    font-size: 2.34375rem;
+    margin-left: 1rem;
+}
+.usuario-principal a{
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.usuario-secundario{
+    margin: 0 10%;
+    border: rgb(201, 201, 201) solid 1px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.usuario-secundario p{
+    margin: 2px;
+}
+.usuario-secundario h3{
+    margin: 10px;
+}
