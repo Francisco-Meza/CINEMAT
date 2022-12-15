@@ -8,11 +8,14 @@
     if(isset($_POST['id'])){
         $id = $_POST['id'];
         echo "Si hay id" . $_FILES['foto']['name'];
-        $sql = "UPDATE usuario SET NOMBRE ='$nombre',APELLIDOS='$apellidos',FECHA_NACIMIENTO='$fecha_nacimiento',CORREO='$correo', PASSWOR='$password'";
+        $sql = "UPDATE usuario SET NOMBRE ='$nombre',APELLIDOS='$apellidos',FECHA_NACIMIENTO='$fecha_nacimiento',CORREO='$correo'";
         if($_FILES['foto']['name']!="")
         {
             $foto = ConvertirImagen();
             $sql = $sql.", foto = '$foto'";
+        }
+        if($password != ""){
+            $sql = $sql.", PASSWOR='$password'";
         }
         $sql = $sql . "WHERE ID_USUARIO = $id";
         $resul = mysqli_query($conn, $sql)or die("Query Failed! SQL - Error: ".mysqli_error($conectar));

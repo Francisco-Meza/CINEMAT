@@ -114,7 +114,7 @@
                      document.getElementById('apellidos').value = "<?php echo $data['APELLIDOS']; ?>"
                      document.getElementById('fecha_nacimiento').value = "<?php echo $data['FECHA_NACIMIENTO']; ?>"
                      document.getElementById('correo').value = "<?php echo $data['CORREO']; ?>"
-                     document.getElementById('password').value = "<?php echo $data['PASSWOR']; ?>"
+                     //document.getElementById('password').value = "<?php// echo $data['PASSWOR']; ?>"
 
                 </script>
                 <input type="hidden" name="id" value="<?php echo $id ?>">

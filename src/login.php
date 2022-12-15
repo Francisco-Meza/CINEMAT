@@ -93,7 +93,17 @@
     <section>
         <div class="infoUsuario">
             <div class='usuario-principal'>
+                <?php
+                if($data['FOTO'] != ""){
+                ?>
                 <img src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo" />
+                <?php
+                }else{
+                ?>
+                <img src="assets/default.jpg" alt="default">
+                <?php
+                }
+                ?>
                 <h1>
                     <?php echo $data['NOMBRE'] . " " . $data['APELLIDOS']; ?>
                 </h1>
