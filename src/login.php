@@ -97,7 +97,7 @@
                 <h1>
                     <?php echo $data['NOMBRE'] . " " . $data['APELLIDOS']; ?>
                 </h1>
-                <a href='comboPrueba.php'><button class="button-general">Editar</button></a>
+                <button class="button-general" onclick="editar(<?php echo $id ?>)">Editar</button>
             </div>
             <div class="usuario-secundario">
                 <h3>DETALLES DEL USUARIO</h3>
@@ -113,6 +113,11 @@
     <?php
         }
         ?>
+        <script>
+            function editar(id){
+                window.location.href = "RegistroUsuario.php?id="+id;
+            }
+        </script>
     <script src="js/formulario.js"></script>
 </body>
 
