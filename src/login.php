@@ -85,6 +85,7 @@
                     }
                 ?> 
         </div>
+        <script src="js/formulario.js"></script>
                 <br>
                 <!----------------------DATOS USUARIO---------------->
                 <?php
@@ -114,6 +115,5 @@
                         </div>
                     </div>
                 </section>
-            <script src="js/formulario.js"></script>
     </body>
 </html>
