@@ -1,21 +1,26 @@
-.section-usuario-detalles-informacion-parrafos{
-    font-weight: bold;
-    font-size: large;
+.info-usuario{
+    display: flex;
+    background-color: #541fbf;
+    color: white;
+    font-family: 'Arial Narrow Bold';
+    padding-right: 30%;
+    margin:auto;
+    width: 50%;
 }
-.button-usuario{
-    background-color: #8C52FF;
+.button-comprar{
+    background-color: #541fbf;
     border: none;
     border-radius: 13px;
     color: white;
     height: 30px;
     width: 100px;
+    position:relative;
+    left:150px;
 }
 #section-main-perfil{
-    border: black solid;
-    border-style: dotted;
-    align-content: center;
-    margin-left: 5%;
-    margin-top: 1%;
-    width: 15%;
-    height: 15%;
+    border: none;
+    position: relative;
+    width: 10%;
+    height: 30%;
+    left:100px;
 }

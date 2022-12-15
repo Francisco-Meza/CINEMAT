@@ -79,29 +79,33 @@
             <!----------------PERFIL USUARIO----------------------------->
             <!---------------------BOTON------------------------->
             <br>
-            <center>
-                <a href="cerrarSesion.php"><button class="button-general">Cerrar sesion</button></a>
-            </center>
-        <script src="js/formulario.js"></script>
-        <?php
-            }
-        ?> 
+                <a href="cerrarSesion.php"><button class="button-salir">Cerrar sesion</button></a>
+                
+                <?php
+                    }
+                ?> 
         </div>
-        <?php
-            $id=$_SESSION['id'];        
-            $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, CORREO, FOTO FROM `usuario` where ID_USUARIO = $id";
-            $res = mysqli_query($conn, $query) or die("No se pudo ejecutar la consulta");
-            $data = mysqli_fetch_assoc($res);
-        ?>
-        <section>
-              <h1><?php echo $data['NOMBRE']; ?></h1>
-            <br>
-            <center>
-                <img id="section-main-perfil" src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo"/>
                 <br>
+                <?php
+                    $id=$_SESSION['id'];        
+                    $query = "SELECT ID_USUARIO, NOMBRE, APELLIDOS, CORREO, FOTO FROM `usuario` where ID_USUARIO = $id";
+                    $res = mysqli_query($conn, $query) or die("No se pudo ejecutar la consulta");
+                    $data = mysqli_fetch_assoc($res);
+                ?>
+                <section>
 
-                <button class = "button-usuario">Comprar</button>
-            </center>
-      </section>
+                        <h1 class="info-usuario">
+                            <?php 
+                                echo $data['NOMBRE']; 
+                            ?>
+                        </h1>
+                        <!-- Lo que queria hacer era mandar dando clicl en la foto a cambiar los datos -->
+                        <a href="login.php"><img id="section-main-perfil" src="data:image/jpg;base64,<?php echo base64_encode($data['FOTO']); ?>" alt="Portada de ejemplo"/></a>
+                        <br> 
+                        <br>
+                        <a href='comboPrueba.php'><button class = "button-comprar">Comprar</button></a>
+                        
+                </section>
+            <script src="js/formulario.js"></script>
     </body>
 </html>

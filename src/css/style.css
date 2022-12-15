@@ -162,6 +162,16 @@ textarea{
   margin: 0;
   align-content: center;
 }
+.button-salir{
+    background-color: #6632cf;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    position:relative;
+    left:1200px;
+}
 /*---------------------FORMULARIOS-----------------------------*/
 .formulario{
     margin: auto;
